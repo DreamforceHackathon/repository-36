@@ -1,5 +1,7 @@
 	  <div class="col-xs-3 col-md-3 ">
 	    <a class="thumbnail company-item item-company" data-id="<%= @id %>">
-	    	<%= @Name %>
+	    	<span><%= @Name %></span>
 	    </a>
+
+
 	  </div>

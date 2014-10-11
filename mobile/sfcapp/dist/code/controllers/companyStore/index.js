@@ -20,6 +20,7 @@ function ObjectList(){
 	this.frame = this.el.querySelector(".vf-iframe")
 	this.menu = this.el.querySelector(".mobile-menu");
 	this.appList = this.el.querySelector(".app-list");
+	this.title = this.el.querySelector(".title");
 
 	var btnMenu = this.el.querySelector(".btn-menu");
 	btnMenu.onclick = function(e){
@@ -36,7 +37,9 @@ inherits(ObjectList, EventEmitter);
 
 ObjectList.prototype.activate = function(){
 	this.adjustIFrame();
+	
 	this.frame.src= sfcStore.current.Apiurl + "/" + sfcStore.current.Apps[0]
+	this.title.innerHTML = sfcStore.current.Name
 	this.renderApps();
 }
 
@@ -51,6 +54,7 @@ ObjectList.prototype.renderApps = function(){
 		var model = store.Apps[i];
 		this.appList.innerHTML+= Item(model);
 	};
+	this.appList.innerHTML += Item("Exit")
 }
 
 ObjectList.prototype.onMenuClick = function(e){
@@ -59,7 +63,9 @@ ObjectList.prototype.onMenuClick = function(e){
 }
 
 ObjectList.prototype.onAppClick = function(e){
-	this.frame.src = sfcStore.current.Apiurl + "/" + e.target.dataset.app
+	var app = e.target.dataset.app
+	if(app == "Exit") return this.emit("BACK")
+	this.frame.src = sfcStore.current.Apiurl + "/" + app
 	this.onMenuClick();
 }
 

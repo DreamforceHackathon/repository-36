@@ -2,7 +2,7 @@
 
 var _3Model = require("3vot-model")
 
-Company = _3Model.setup("Company", ["name","apiurl__c"]);
+Company = _3Model.setup("Company", ["name","apiurl__c","logo"]);
 
 
 Company.fetch = function(objectName){

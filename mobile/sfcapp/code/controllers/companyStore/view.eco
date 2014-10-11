@@ -3,18 +3,13 @@
 	<div class="mobile-menu">
 		<div class="app-list">
 
-		 
-		  
-
 		</div>
 
 	</div>
 
 	<div class="mobile-header">
-	<a class="btn btn-primary btn-menu">|||</a>
-	
-	<span class="title">Company Store</span>
-		
+		<a class="btn btn-primary btn-menu">|||</a>	
+		<span class="title"></span>
 	</div>
 
 	<div class="mobile-body">

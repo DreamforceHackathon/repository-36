@@ -423,9 +423,8 @@ function ObjectList(){
 	this.el = domify( Layout() );
 	
 
-	this.list = this.el
+	this.list = this.el.querySelector(".company-list")
 	this.el.onclick = function(e){
-		console.log(e)
 		if(e.target.classList.contains('item-add') == false){
 			that.onItemClick(e);
 		}
@@ -457,7 +456,11 @@ ObjectList.prototype.onItemAdd = function(e){
 }
 
 ObjectList.prototype.onItemClick = function(e){
-	var id = e.target.dataset.id
+	var target = e.target;
+	if( !target.classList.contains("item-company") ) target = target.parentNode;
+	
+
+	var id = target.dataset.id;
 
 	this.emit("SELECT_COMPANY",id)
 }
@@ -512,11 +515,11 @@ module.exports = function(__obj) {
     
       __out.push(__sanitize(this.id));
     
-      __out.push('">\n\t    \t');
+      __out.push('">\n\t    \t<span>');
     
       __out.push(__sanitize(this.Name));
     
-      __out.push('\n\t    </a>\n\t  </div>\n');
+      __out.push('</span>\n\t    </a>\n\n\n\t  </div>\n');
     
     }).call(this);
     
@@ -564,7 +567,7 @@ module.exports = function(__obj) {
   }
   (function() {
     (function() {
-      __out.push('<div class="padded-container">\n\t<div class="row company-list ">\n\n\n\n\t</div>\n</div>');
+      __out.push('<div>\n\n\t<div class="mobile-header">\n\t\t<span class="title">Pick or add a Company</span>\t\n\t</div>\n\n\t<div class="padded-container">\n\n\t\t<div class="row company-list ">\n\n\t\t</div>\n\t</div>\n\n</div>');
     
     }).call(this);
     
@@ -595,6 +598,7 @@ function ObjectList(){
 	this.frame = this.el.querySelector(".vf-iframe")
 	this.menu = this.el.querySelector(".mobile-menu");
 	this.appList = this.el.querySelector(".app-list");
+	this.title = this.el.querySelector(".title");
 
 	var btnMenu = this.el.querySelector(".btn-menu");
 	btnMenu.onclick = function(e){
@@ -611,7 +615,9 @@ inherits(ObjectList, EventEmitter);
 
 ObjectList.prototype.activate = function(){
 	this.adjustIFrame();
+	
 	this.frame.src= sfcStore.current.Apiurl + "/" + sfcStore.current.Apps[0]
+	this.title.innerHTML = sfcStore.current.Name
 	this.renderApps();
 }
 
@@ -626,6 +632,7 @@ ObjectList.prototype.renderApps = function(){
 		var model = store.Apps[i];
 		this.appList.innerHTML+= Item(model);
 	};
+	this.appList.innerHTML += Item("Exit")
 }
 
 ObjectList.prototype.onMenuClick = function(e){
@@ -634,7 +641,9 @@ ObjectList.prototype.onMenuClick = function(e){
 }
 
 ObjectList.prototype.onAppClick = function(e){
-	this.frame.src = sfcStore.current.Apiurl + "/" + e.target.dataset.app
+	var app = e.target.dataset.app
+	if(app == "Exit") return this.emit("BACK")
+	this.frame.src = sfcStore.current.Apiurl + "/" + app
 	this.onMenuClick();
 }
 
@@ -742,7 +751,7 @@ module.exports = function(__obj) {
   }
   (function() {
     (function() {
-      __out.push('<div class="company-store">\n\t\n\t<div class="mobile-menu">\n\t\t<div class="app-list">\n\n\t\t \n\t\t  \n\n\t\t</div>\n\n\t</div>\n\n\t<div class="mobile-header">\n\t<a class="btn btn-primary btn-menu">|||</a>\n\t\n\t<span class="title">Company Store</span>\n\t\t\n\t</div>\n\n\t<div class="mobile-body">\n  \t\t<iframe class="embed-responsive-item vf-iframe" src=""></iframe>\n\t</div>\n\t\t\n\t</div>\n\n</div>\n');
+      __out.push('<div class="company-store">\n\t\n\t<div class="mobile-menu">\n\t\t<div class="app-list">\n\n\t\t</div>\n\n\t</div>\n\n\t<div class="mobile-header">\n\t\t<a class="btn btn-primary btn-menu">|||</a>\t\n\t\t<span class="title"></span>\n\t</div>\n\n\t<div class="mobile-body">\n  \t\t<iframe class="embed-responsive-item vf-iframe" src=""></iframe>\n\t</div>\n\t\t\n\t</div>\n\n</div>\n');
     
     }).call(this);
     
@@ -894,6 +903,11 @@ function ObjectList(){
 		that.onItemClick(e);
 	}
 	
+	var btnBack = this.el.querySelector(".btn-back");
+	btnBack.onclick = function(){
+		that.emit("BACK");
+	}
+
 	Company.fetch();
 	Company.bind("refresh", function(){ that.render() });
 	
@@ -969,11 +983,11 @@ module.exports = function(__obj) {
     
       __out.push(__sanitize(this.id));
     
-      __out.push('">\n\t\t    ');
+      __out.push('">\n\t\t    </a>\n\t\t    \t\t    ');
     
       __out.push(__sanitize(this.Name));
     
-      __out.push('\n\t\t    </a>\n\t\t  </li>');
+      __out.push('\n\n\t\t  </li>');
     
     }).call(this);
     
@@ -1021,7 +1035,7 @@ module.exports = function(__obj) {
   }
   (function() {
     (function() {
-      __out.push('<div class="padded-container">\n\t<div class="searchCompany">\n\t\t<input />\n\t\t<a class="btn">  </a>\n\n\t\t<hr/>\n\n\t\t<div class="row company-list list-group">\n\n\t\n\t\t</div>\n\t</div>\n</div>');
+      __out.push('<div>\n\n\t<div class="mobile-header">\n\t\t<a class="btn-back btn btn-default"> Back </a>\n\t\t<span class="title">Company Store</span>\n\t</div>\n\n<div class="padded-container">\n\t<div class="searchCompany">\n\t\t<input />\n\t\t<a class="btn btn-primary"> Search </a>\n\n\t\t<hr/>\n\n\t\t<div class="row company-list list-group">\n\n\t\n\t\t</div>\n\t</div>\n</div>\n\n</div>');
     
     }).call(this);
     
@@ -1069,6 +1083,9 @@ function Manager(container_param){
 		manager.showController( manager.loginController )  
 	});
 
+
+
+
 	this.loginController.on("LOGIN_COMPLETE", function(response){
 		sfcStore.current.Token = response.sfc_token__c;
 		response.sfc_apps__c = response.sfc_apps__c || '{apps:[]}'
@@ -1083,6 +1100,14 @@ function Manager(container_param){
 		manager.companiesController.render();
 		sfcStore.current=null;
 	})
+
+	this.searchCompanyController.on("BACK", function(){
+	 	manager.showController( manager.companiesController );
+	});
+
+	this.companyStoreController.on("BACK", function(){
+	 	manager.showController( manager.companiesController );
+	});
 
 	this.showController(this.companiesController);
 }
@@ -1103,7 +1128,7 @@ module.exports = Manager;
 
 var _3Model = require("3vot-model")
 
-Company = _3Model.setup("Company", ["name","apiurl__c"]);
+Company = _3Model.setup("Company", ["name","apiurl__c","logo"]);
 
 
 Company.fetch = function(objectName){

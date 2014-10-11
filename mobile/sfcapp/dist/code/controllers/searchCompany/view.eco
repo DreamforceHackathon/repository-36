@@ -1,7 +1,14 @@
+<div>
+
+	<div class="mobile-header">
+		<a class="btn-back btn btn-default"> Back </a>
+		<span class="title">Company Store</span>
+	</div>
+
 <div class="padded-container">
 	<div class="searchCompany">
 		<input />
-		<a class="btn">  </a>
+		<a class="btn btn-primary"> Search </a>
 
 		<hr/>
 
@@ -10,4 +17,6 @@
 	
 		</div>
 	</div>
+</div>
+
 </div>

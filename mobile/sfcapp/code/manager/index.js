@@ -37,6 +37,9 @@ function Manager(container_param){
 		manager.showController( manager.loginController )  
 	});
 
+
+
+
 	this.loginController.on("LOGIN_COMPLETE", function(response){
 		sfcStore.current.Token = response.sfc_token__c;
 		response.sfc_apps__c = response.sfc_apps__c || '{apps:[]}'
@@ -51,6 +54,14 @@ function Manager(container_param){
 		manager.companiesController.render();
 		sfcStore.current=null;
 	})
+
+	this.searchCompanyController.on("BACK", function(){
+	 	manager.showController( manager.companiesController );
+	});
+
+	this.companyStoreController.on("BACK", function(){
+	 	manager.showController( manager.companiesController );
+	});
 
 	this.showController(this.companiesController);
 }

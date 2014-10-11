@@ -1,7 +1,14 @@
-<div class="padded-container">
-	<div class="row company-list ">
+<div>
 
-
-
+	<div class="mobile-header">
+		<span class="title">Pick or add a Company</span>	
 	</div>
+
+	<div class="padded-container">
+
+		<div class="row company-list ">
+
+		</div>
+	</div>
+
 </div>

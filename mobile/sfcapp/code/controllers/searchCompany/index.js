@@ -26,6 +26,11 @@ function ObjectList(){
 		that.onItemClick(e);
 	}
 	
+	var btnBack = this.el.querySelector(".btn-back");
+	btnBack.onclick = function(){
+		that.emit("BACK");
+	}
+
 	Company.fetch();
 	Company.bind("refresh", function(){ that.render() });
 	

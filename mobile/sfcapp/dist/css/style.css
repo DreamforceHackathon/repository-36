@@ -6,30 +6,60 @@
 
 .padded-container{
 	padding: 20px;
+	padding-top: 45px;
 }
 
 .company-item{
-	height: 50px;
+	height: 60px;
+
 }
 
-.company-item.item-add{
-	background-color: green;
-	text-decoration: none;
+.company-item.thumbnail{
+}
 
+.company-item span{
+	font-style: 14px;
+	line-height: 12px;
+	padding-top: 5px;
+	text-align: center;
+	display: block;
+	height: 60px;
+	vertical-align: middle;
+}
+
+
+.company-item.item-add{
+	text-decoration: none;
+ background: -moz-linear-gradient(#2a93d5,#107abb);
+ background: -webkit-linear-gradient(#2a93d5,#107abb);
+ background: -ms-linear-gradient(#2a93d5,#107abb);
+ background: linear-gradient(#2a93d5,#107abb);
 }
 
 .company-item.item-add{
 	font-size: 45px;
 	text-align: center;
-	line-height: 39px;
+	line-height: 30px;
 	color: #fff;
 }
 
-.mobile-header{
+
+
+.mobile-header {
 	position: absolute;
 	left: 0px;
 	right: 0px;
-	background-color: blue;
+	padding: 5px;
+ background: -moz-linear-gradient(#2a93d5,#107abb);
+ background: -webkit-linear-gradient(#2a93d5,#107abb);
+ background: -ms-linear-gradient(#2a93d5,#107abb);
+ background: linear-gradient(#2a93d5,#107abb);
+}
+
+.mobile-header .title{
+	line-height: 30px;
+	color: #fff;
+	font-family: "Open Sans", "Arial";
 }
 
 .mobile-body{
@@ -62,6 +92,18 @@
 	-webkit-transition: left 1s; /* For Safari 3.1 to 6.0 */
   transition: left 1s;
   z-index: 1;
+  padding: 5px;
+  padding-top: 15px;
 }
+
+
+.mobile-menu .app-item{
+
+}
+
+
+
+
+
 
 

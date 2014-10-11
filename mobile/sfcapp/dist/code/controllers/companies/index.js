@@ -17,9 +17,8 @@ function ObjectList(){
 	this.el = domify( Layout() );
 	
 
-	this.list = this.el
+	this.list = this.el.querySelector(".company-list")
 	this.el.onclick = function(e){
-		console.log(e)
 		if(e.target.classList.contains('item-add') == false){
 			that.onItemClick(e);
 		}
@@ -51,7 +50,11 @@ ObjectList.prototype.onItemAdd = function(e){
 }
 
 ObjectList.prototype.onItemClick = function(e){
-	var id = e.target.dataset.id
+	var target = e.target;
+	if( !target.classList.contains("item-company") ) target = target.parentNode;
+	
+
+	var id = target.dataset.id;
 
 	this.emit("SELECT_COMPANY",id)
 }

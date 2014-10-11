@@ -53,7 +53,6 @@ ObjectList.prototype.onItemClick = function(e){
 	var target = e.target;
 	if( !target.classList.contains("item-company") ) target = target.parentNode;
 	
-
 	var id = target.dataset.id;
 
 	this.emit("SELECT_COMPANY",id)

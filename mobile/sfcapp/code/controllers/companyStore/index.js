@@ -13,7 +13,11 @@ var EventEmitter = require('events').EventEmitter;
 inherits(ObjectList, EventEmitter);
 
 function ObjectList(){
+	this.el = domify( Layout() );
+}
+inherits(ObjectList, EventEmitter);
 
+ObjectList.prototype.renderStore = function(){
 	var that = this;
 	this.el = domify( Layout() );
 	this.body = this.el.querySelector(".mobile-body")
@@ -33,26 +37,29 @@ function ObjectList(){
 
 	this.onMenuClick();
 }
-inherits(ObjectList, EventEmitter);
 
 ObjectList.prototype.activate = function(){
+	this.renderStore();
 	this.adjustIFrame();
-	
 	this.frame.src= sfcStore.current.Apiurl + "/" + sfcStore.current.Apps[0]
 	this.title.innerHTML = sfcStore.current.Name
 	this.renderApps();
 }
 
 ObjectList.prototype.adjustIFrame = function(){
-	this.frame.style.height = this.body.offsetHeight + "px"
-	this.frame.style.width = this.body.offsetWidth + "px"
+	var that = this;
+	setTimeout(function(){
+		that.frame.style.height = that.body.offsetHeight + "px"
+		that.frame.style.width = that.body.offsetWidth + "px"
+	},100)
+
 }
 
 ObjectList.prototype.renderApps = function(){
 	var store = sfcStore.current;
 	for (var i = store.Apps.length - 1; i >= 0; i--) {
 		var model = store.Apps[i];
-		this.appList.innerHTML+= Item(model);
+		this.appList.innerHTML += Item(model);
 	};
 	this.appList.innerHTML += Item("Exit")
 }
@@ -64,6 +71,7 @@ ObjectList.prototype.onMenuClick = function(e){
 
 ObjectList.prototype.onAppClick = function(e){
 	var app = e.target.dataset.app
+	
 	if(app == "Exit") return this.emit("BACK")
 	this.frame.src = sfcStore.current.Apiurl + "/" + app
 	this.onMenuClick();

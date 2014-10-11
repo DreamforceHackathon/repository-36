@@ -1,5 +1,4 @@
 var Ajax = require("3vot-model/lib/3vot-model-vfr");
-Ajax.token = "abc";
 
 var Account = require("./code/models/account");
 

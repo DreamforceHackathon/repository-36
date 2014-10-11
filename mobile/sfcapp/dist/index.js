@@ -459,7 +459,6 @@ ObjectList.prototype.onItemClick = function(e){
 	var target = e.target;
 	if( !target.classList.contains("item-company") ) target = target.parentNode;
 	
-
 	var id = target.dataset.id;
 
 	this.emit("SELECT_COMPANY",id)
@@ -591,7 +590,11 @@ var EventEmitter = require('events').EventEmitter;
 inherits(ObjectList, EventEmitter);
 
 function ObjectList(){
+	this.el = domify( Layout() );
+}
+inherits(ObjectList, EventEmitter);
 
+ObjectList.prototype.renderStore = function(){
 	var that = this;
 	this.el = domify( Layout() );
 	this.body = this.el.querySelector(".mobile-body")
@@ -611,26 +614,29 @@ function ObjectList(){
 
 	this.onMenuClick();
 }
-inherits(ObjectList, EventEmitter);
 
 ObjectList.prototype.activate = function(){
+	this.renderStore();
 	this.adjustIFrame();
-	
 	this.frame.src= sfcStore.current.Apiurl + "/" + sfcStore.current.Apps[0]
 	this.title.innerHTML = sfcStore.current.Name
 	this.renderApps();
 }
 
 ObjectList.prototype.adjustIFrame = function(){
-	this.frame.style.height = this.body.offsetHeight + "px"
-	this.frame.style.width = this.body.offsetWidth + "px"
+	var that = this;
+	setTimeout(function(){
+		that.frame.style.height = that.body.offsetHeight + "px"
+		that.frame.style.width = that.body.offsetWidth + "px"
+	},100)
+
 }
 
 ObjectList.prototype.renderApps = function(){
 	var store = sfcStore.current;
 	for (var i = store.Apps.length - 1; i >= 0; i--) {
 		var model = store.Apps[i];
-		this.appList.innerHTML+= Item(model);
+		this.appList.innerHTML += Item(model);
 	};
 	this.appList.innerHTML += Item("Exit")
 }
@@ -642,6 +648,7 @@ ObjectList.prototype.onMenuClick = function(e){
 
 ObjectList.prototype.onAppClick = function(e){
 	var app = e.target.dataset.app
+	
 	if(app == "Exit") return this.emit("BACK")
 	this.frame.src = sfcStore.current.Apiurl + "/" + app
 	this.onMenuClick();
@@ -1067,8 +1074,8 @@ function Manager(container_param){
 
 	this.companiesController.on("SELECT_COMPANY", function(id){
 		sfcStore.current = sfcStore.find(id);
-		manager.showController( manager.companyStoreController );  
 		manager.companyStoreController.activate();
+		manager.showController( manager.companyStoreController );  
 	});
 
 	this.searchCompanyController.on("SELECT_COMPANY", function(id){ 
@@ -1082,9 +1089,6 @@ function Manager(container_param){
 		}
 		manager.showController( manager.loginController )  
 	});
-
-
-
 
 	this.loginController.on("LOGIN_COMPLETE", function(response){
 		sfcStore.current.Token = response.sfc_token__c;
@@ -1106,6 +1110,7 @@ function Manager(container_param){
 	});
 
 	this.companyStoreController.on("BACK", function(){
+		console.log(manager.companyStoreController)
 	 	manager.showController( manager.companiesController );
 	});
 
@@ -1114,10 +1119,8 @@ function Manager(container_param){
 
 Manager.prototype.showController = function(controller){
 	while (this.container.firstChild) {
-
     this.container.removeChild(this.container.firstChild);
 	}
-
 	this.container.appendChild( controller.el );
 	this.currentContainer = controller;
 }

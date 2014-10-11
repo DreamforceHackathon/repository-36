@@ -5554,3 +5554,7 @@ java.lang.IllegalArgumentException: 18: line breaks not allowed in string litera
 !ENTRY com.salesforce.ide.core 2 0 2014-10-11 07:15:27.871
 !MESSAGE  WARN [2014-10-11 07:15:27,871] (ProjectService.java:handleRetrieveResult:2085) - Nothing to save to project - retrieve result is empty
 
+
+!ENTRY com.salesforce.ide.core 4 0 2014-10-11 11:05:28.961
+!MESSAGE ERROR [2014-10-11 11:05:28,958] (MetadataOperationsRetryAspect.java:metadataOperationsRetry:24) - ForceRemoteException occurred while attempting to perform a metadata operation
+

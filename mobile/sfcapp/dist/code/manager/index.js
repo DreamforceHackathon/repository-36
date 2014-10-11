@@ -21,8 +21,8 @@ function Manager(container_param){
 
 	this.companiesController.on("SELECT_COMPANY", function(id){
 		sfcStore.current = sfcStore.find(id);
-		manager.showController( manager.companyStoreController );  
 		manager.companyStoreController.activate();
+		manager.showController( manager.companyStoreController );  
 	});
 
 	this.searchCompanyController.on("SELECT_COMPANY", function(id){ 
@@ -36,9 +36,6 @@ function Manager(container_param){
 		}
 		manager.showController( manager.loginController )  
 	});
-
-
-
 
 	this.loginController.on("LOGIN_COMPLETE", function(response){
 		sfcStore.current.Token = response.sfc_token__c;
@@ -60,6 +57,7 @@ function Manager(container_param){
 	});
 
 	this.companyStoreController.on("BACK", function(){
+		console.log(manager.companyStoreController)
 	 	manager.showController( manager.companiesController );
 	});
 
@@ -68,10 +66,8 @@ function Manager(container_param){
 
 Manager.prototype.showController = function(controller){
 	while (this.container.firstChild) {
-
     this.container.removeChild(this.container.firstChild);
 	}
-
 	this.container.appendChild( controller.el );
 	this.currentContainer = controller;
 }

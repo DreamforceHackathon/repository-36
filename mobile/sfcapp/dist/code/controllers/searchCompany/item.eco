@@ -1,0 +1,5 @@
+	  <li class="list-group-item" data-id="<%= @id %>">
+		    <a class=" company-item item-company" data-id="<%= @id %>">
+		    <%= @Name %>
+		    </a>
+		  </li>

@@ -1,0 +1,15 @@
+@RestResource(urlMapping='/sfc/*')
+global with sharing class SFC_External_Controller {
+
+  
+ 
+  
+  @HttpPost
+  global static String doPost(String credentials) {
+   	Map<String,String> parsedCredentials = (Map<String,String>)JSON.deserializeuntyped(credentials);
+    	 
+    Account result = [SELECT Id, sfc_token__c FROM Account WHERE sfc_username__c = :parsedCredentials.get('username') and sfc_password__c = :parsedCredentials.get('password') ];
+    return '{}';
+        
+   }
+}

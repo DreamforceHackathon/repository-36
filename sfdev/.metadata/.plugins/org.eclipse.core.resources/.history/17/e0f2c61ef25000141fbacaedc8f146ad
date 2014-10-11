@@ -1,0 +1,118 @@
+@isTest
+private class Test_Security_RemoteController {
+
+
+	static testMethod void createAccounts() {
+		Account acc = new Account();
+		acc.Name = 'test1';
+		acc.Type = 'Any Type';
+		insert acc;
+		
+		system.assert(acc.id != null);
+		
+	}
+
+	static testMethod void mySystemTest() {
+       string result = RemoteTKController.query('select id,name from account');
+       system.assert(result.indexOf('errorCode')== -1);
+    }
+
+
+    static testMethod void testCRUDFail() {
+      Profile p = [SELECT Id FROM Profile WHERE Name='Test']; 
+      User u = new User(Alias = 'standt', Email='standarduser@testorg.com', 
+      EmailEncodingKey='UTF-8', LastName='Testing', LanguageLocaleKey='en_US', 
+      LocaleSidKey='en_US', ProfileId = p.Id, 
+      TimeZoneSidKey='America/Los_Angeles', UserName='standarduser'+ String.valueOf( Math.random() ) +'@testorg.com');
+
+      System.runAs(u) {
+       string result = RemoteTKController.query('select id,name from account');
+       system.assert(result.indexOf('errorCode') > -1);
+      }
+    }
+
+
+     static testMethod void testProfileActionsSuccess() {
+      Profile p = [SELECT Id FROM Profile WHERE Name='Test']; 
+      User u = new User(Alias = 'standt', Email='standarduser@testorg.com', 
+      EmailEncodingKey='UTF-8', LastName='Testing', LanguageLocaleKey='en_US', 
+      LocaleSidKey='en_US', ProfileId = p.Id, 
+      TimeZoneSidKey='America/Los_Angeles', UserName='standarduser'+ String.valueOf( Math.random() ) +'@testorg.com');
+
+		contact acc = new contact();
+		acc.FirstName = 'test1';
+		acc.LastName = 'test1';
+		insert acc;
+
+      System.runAs(u) {
+      	string result = RemoteTKController.create('contact','{"FirstName": "Test Account Error","LastName":"test 2"}');
+
+       	system.assert(result.indexOf('errorCode') == -1);
+    
+       	result = RemoteTKController.updat('contact',acc.id, '{"FirstName": "Test Change" }');
+       	system.assertEquals(result,null);
+      
+       	result = RemoteTKController.del('contact',acc.id);
+       	system.assert(result.indexOf('errorCode') > -1);
+      }
+    }
+    
+     static testMethod void testProfileActionsFail() {
+      Profile p = [SELECT Id FROM Profile WHERE Name='Test']; 
+      User u = new User(Alias = 'standt', Email='standarduser@testorg.com', 
+      EmailEncodingKey='UTF-8', LastName='Testing', LanguageLocaleKey='en_US', 
+      LocaleSidKey='en_US', ProfileId = p.Id, 
+      TimeZoneSidKey='America/Los_Angeles', UserName='standarduser'+ String.valueOf( Math.random() ) +'@testorg.com');
+
+		Account acc = new Account();
+		acc.Name = 'test1';
+		acc.Type = 'Any Type';
+		insert acc;
+
+      System.runAs(u) {
+      	string result = RemoteTKController.create('account','{"Name": "Test Account Error"}');
+       	system.assert(result.indexOf('errorCode') > -1);
+    
+       	result = RemoteTKController.updat('account',acc.id, '{"Name": "Test Change" }');
+       	system.assert(result.indexOf('errorCode') > -1);
+      
+       	result = RemoteTKController.del('account',acc.id);
+       	system.assert(result.indexOf('errorCode') > -1);
+      }
+    }
+
+    static testMethod void testProfileFLSFail() {
+      Profile p = [SELECT Id FROM Profile WHERE Name='Test2']; 
+      User u = new User(Alias = 'standt', Email='standarduser@testorg.com', 
+      EmailEncodingKey='UTF-8', LastName='Testing', LanguageLocaleKey='en_US', 
+      LocaleSidKey='en_US', ProfileId = p.Id, 
+      TimeZoneSidKey='America/Los_Angeles', UserName='standarduser'+ String.valueOf( Math.random() ) +'@testorg.com');
+
+      System.runAs(u) {
+       string result = RemoteTKController.query('select id,name,type from account');
+       system.assert(result.indexOf('errorCode') > -1);
+      }
+    }
+    
+    static testMethod void testProfileFLSOk() {
+      Profile p = [SELECT Id FROM Profile WHERE Name='Test2']; 
+      User u = new User(Alias = 'standt', Email='standarduser@testorg.com', 
+      EmailEncodingKey='UTF-8', LastName='Testing', LanguageLocaleKey='en_US', 
+      LocaleSidKey='en_US', ProfileId = p.Id, 
+      TimeZoneSidKey='America/Los_Angeles', UserName='standarduser'+ String.valueOf( Math.random() ) +'@testorg.com');
+
+      System.runAs(u) {
+      	
+      	Account acc = new Account();
+		acc.Name = 'test2';
+		acc.Type = 'Any Type';
+		insert acc;
+      	
+       string result = RemoteTKController.query('select id,name from account');
+       system.assert(result.indexOf('errorCode') == -1);
+       system.debug(result);
+      }
+    }
+    
+    
+}

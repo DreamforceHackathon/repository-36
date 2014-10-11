@@ -1,0 +1,13 @@
+<div class="padded-container">
+	<div class="searchCompany">
+		<input />
+		<a class="btn">  </a>
+
+		<hr/>
+
+		<div class="row company-list list-group">
+
+	
+		</div>
+	</div>
+</div>

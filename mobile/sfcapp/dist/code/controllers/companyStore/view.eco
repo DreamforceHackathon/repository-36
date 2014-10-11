@@ -1,0 +1,26 @@
+<div class="company-store">
+	
+	<div class="mobile-menu">
+		<div class="app-list">
+
+		 
+		  
+
+		</div>
+
+	</div>
+
+	<div class="mobile-header">
+	<a class="btn btn-primary btn-menu">|||</a>
+	
+	<span class="title">Company Store</span>
+		
+	</div>
+
+	<div class="mobile-body">
+  		<iframe class="embed-responsive-item vf-iframe" src=""></iframe>
+	</div>
+		
+	</div>
+
+</div>

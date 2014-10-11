@@ -1,0 +1,17 @@
+@RestResource(urlMapping='/sfc/*')
+public with sharing class SFC_Admin_Controller {
+
+
+ 
+  
+    @HttpGet
+    global static List<Company__c> doGet() {
+        RestRequest req = RestContext.request;
+        RestResponse res = RestContext.response;
+        //String accountId = req.requestURI.substring(req.requestURI.lastIndexOf('/')+1);
+        Company__c result = [SELECT Id, Name, apiurl__c from company__c];
+        return result;
+    }
+  
+ 
+}

@@ -1,0 +1,26 @@
+@RestResource(urlMapping='/sfc/*')
+global with sharing class SFC_External_Controller {
+
+  @HttpGet
+  global static String doPost() {
+  	
+  	RestResponse res = RestContext.response;
+    RestRequest req = RestContext.request;
+  	String url = req.requestURI.substring(req.requestURI.lastIndexOf('/')+1);
+  	
+    Map<String,String> queryReference  = new PageReference(req.requestURI).getParameters();
+    return req.resourcePath;//JSON.serialize(queryReference);
+   	Map<string,string> parsed = (Map<String,String>)JSON.deserializeuntyped(queryReference.get('credentials'));
+    return '{"ok":true}';
+   	
+    Account result = [SELECT Id, sfc_token__c FROM Account WHERE sfc_username__c = :parsed.get('username') and sfc_password__c = :parsed.get('password') ];
+    
+    
+    return '{}';
+        
+   }
+   
+   
+   
+
+}

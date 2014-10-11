@@ -1,0 +1,7 @@
+<apex:component controller="SFC_Controller" >
+<!-- Begin Default Content REMOVE THIS -->
+
+
+
+<!-- End Default Content REMOVE THIS -->
+</apex:component>

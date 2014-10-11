@@ -1,0 +1,3 @@
+<li data-id="<%= @id %>" class="list-group-item list-view-item" >
+	<%= @label %>
+</li>

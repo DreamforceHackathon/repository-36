@@ -1,0 +1,29 @@
+<div class="sliding-view">
+
+	<div class="section-header section-header__big row">
+		<a class="btn btn-default btn-back section-btn col-xs-1"><</a>
+		<div class="section-title col-xs-4 section-title__big">SF1 by Clay</div>
+		<div class="form-wrapper col-xs-5">
+			<input class="form-control" id="txtSearch" type="text"/>
+		</div>
+		<a class="btn btn-options section-btn btn-default btn-primary col-xs-1 pull-right" id="btnViews">V</a>
+	</div>
+
+
+	<div id="predefinedViews">
+		<div class="section-header">
+			<div class="section-title">Predefined Views</div>	
+		</div>
+	
+
+		<ul id="viewList" class="list-group list-group-simple"></ul>
+
+	</div>
+
+	<div class="section-header">
+		<div id="itemListTitle" class="section-title">Recently Viewed</div>	
+	</div>		
+	
+	<ul id="itemList" class="list-group"></ul>
+	
+</div>

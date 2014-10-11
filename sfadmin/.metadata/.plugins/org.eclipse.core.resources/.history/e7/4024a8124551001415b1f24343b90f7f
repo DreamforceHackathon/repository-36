@@ -1,0 +1,15 @@
+@RestResource(urlMapping='/sfc/*')
+global with sharing class SFC_Admin_Controller {
+
+
+ 
+  
+    @RemoteAction
+    global static List<Company__c> getCompanies() {
+        //String accountId = req.requestURI.substring(req.requestURI.lastIndexOf('/')+1);
+        List<Company__c> result = [SELECT Id, Name, apiurl__c from company__c];
+        return result;
+    }
+  
+ 
+}

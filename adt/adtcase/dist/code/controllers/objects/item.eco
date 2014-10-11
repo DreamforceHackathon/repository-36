@@ -1,0 +1,1 @@
+<div class="sf1button large" data-name="<%= @ %>"> <span class="icon icon-arrow-right"></span> <%= @ %></div>

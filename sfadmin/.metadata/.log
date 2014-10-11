@@ -1,0 +1,971 @@
+!SESSION 2014-10-10 20:36:58.842 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
+Framework arguments:  -keyring /Users/roberto/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws carbon -arch x86 -data /Users/roberto/proyectos/dfhack/sfadmin -keyring /Users/roberto/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-10-10 20:37:01.754
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:46.363
+!MESSAGE  WARN [2014-10-10 20:37:46,359] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'ExternalDataSource': Unable to get bean for id 'ExternalDataSource'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:46.376
+!MESSAGE  WARN [2014-10-10 20:37:46,376] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'SamlSsoConfig': Unable to get bean for id 'SamlSsoConfig'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:46.867
+!MESSAGE  WARN [2014-10-10 20:37:46,866] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'ExternalDataSource': Unable to get bean for id 'ExternalDataSource'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:46.883
+!MESSAGE  WARN [2014-10-10 20:37:46,882] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'SamlSsoConfig': Unable to get bean for id 'SamlSsoConfig'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:49.611
+!MESSAGE  WARN [2014-10-10 20:37:49,610] (Utils.java:loadDocument:823) - Unable to load document: /Users/roberto/proyectos/dfhack/sfadmin/.metadata/.plugins/com.salesforce.ide.core/packageCache.xml (No such file or directory)
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:50.115
+!MESSAGE  WARN [2014-10-10 20:37:50,114] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'ExternalDataSource': Unable to get bean for id 'ExternalDataSource'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:50.147
+!MESSAGE  WARN [2014-10-10 20:37:50,146] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'SamlSsoConfig': Unable to get bean for id 'SamlSsoConfig'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:50.488
+!MESSAGE  WARN [2014-10-10 20:37:50,487] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'ExternalDataSource': Unable to get bean for id 'ExternalDataSource'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:50.507
+!MESSAGE  WARN [2014-10-10 20:37:50,506] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'SamlSsoConfig': Unable to get bean for id 'SamlSsoConfig'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:50.831
+!MESSAGE  WARN [2014-10-10 20:37:50,830] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'ExternalDataSource': Unable to get bean for id 'ExternalDataSource'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:50.838
+!MESSAGE  WARN [2014-10-10 20:37:50,837] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'SamlSsoConfig': Unable to get bean for id 'SamlSsoConfig'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:51.216
+!MESSAGE  WARN [2014-10-10 20:37:51,215] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'ExternalDataSource': Unable to get bean for id 'ExternalDataSource'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:51.223
+!MESSAGE  WARN [2014-10-10 20:37:51,222] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'SamlSsoConfig': Unable to get bean for id 'SamlSsoConfig'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:51.629
+!MESSAGE  WARN [2014-10-10 20:37:51,628] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'ExternalDataSource': Unable to get bean for id 'ExternalDataSource'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:51.644
+!MESSAGE  WARN [2014-10-10 20:37:51,643] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'SamlSsoConfig': Unable to get bean for id 'SamlSsoConfig'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:57.024
+!MESSAGE  WARN [2014-10-10 20:37:57,023] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'BusinessProcess': Unable to get bean for id 'BusinessProcess'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:57.042
+!MESSAGE  WARN [2014-10-10 20:37:57,041] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'CustomField': Unable to get bean for id 'CustomField'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:57.044
+!MESSAGE  WARN [2014-10-10 20:37:57,043] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'CustomLabel': Unable to get bean for id 'CustomLabel'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:57.284
+!MESSAGE  WARN [2014-10-10 20:37:57,283] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'ExternalDataSource': Unable to get bean for id 'ExternalDataSource'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:57.307
+!MESSAGE  WARN [2014-10-10 20:37:57,306] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'SamlSsoConfig': Unable to get bean for id 'SamlSsoConfig'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:57.621
+!MESSAGE  WARN [2014-10-10 20:37:57,620] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'ExternalDataSource': Unable to get bean for id 'ExternalDataSource'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:57.639
+!MESSAGE  WARN [2014-10-10 20:37:57,639] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'SamlSsoConfig': Unable to get bean for id 'SamlSsoConfig'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:57.951
+!MESSAGE  WARN [2014-10-10 20:37:57,950] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'ExternalDataSource': Unable to get bean for id 'ExternalDataSource'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:57.970
+!MESSAGE  WARN [2014-10-10 20:37:57,969] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'SamlSsoConfig': Unable to get bean for id 'SamlSsoConfig'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.101
+!MESSAGE  WARN [2014-10-10 20:37:58,100] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'ExternalDataSource': Unable to get bean for id 'ExternalDataSource'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.111
+!MESSAGE  WARN [2014-10-10 20:37:58,110] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'FieldSet': Unable to get bean for id 'FieldSet'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.137
+!MESSAGE  WARN [2014-10-10 20:37:58,136] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'ListView': Unable to get bean for id 'ListView'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.140
+!MESSAGE  WARN [2014-10-10 20:37:58,139] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'NamedFilter': Unable to get bean for id 'NamedFilter'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.146
+!MESSAGE  WARN [2014-10-10 20:37:58,145] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'RecordType': Unable to get bean for id 'RecordType'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.351
+!MESSAGE  WARN [2014-10-10 20:37:58,350] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'ExternalDataSource': Unable to get bean for id 'ExternalDataSource'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.369
+!MESSAGE  WARN [2014-10-10 20:37:58,368] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'SamlSsoConfig': Unable to get bean for id 'SamlSsoConfig'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.477
+!MESSAGE  WARN [2014-10-10 20:37:58,476] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'SamlSsoConfig': Unable to get bean for id 'SamlSsoConfig'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.500
+!MESSAGE  WARN [2014-10-10 20:37:58,499] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'SharingReason': Unable to get bean for id 'SharingReason'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.506
+!MESSAGE  WARN [2014-10-10 20:37:58,505] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'ValidationRule': Unable to get bean for id 'ValidationRule'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.507
+!MESSAGE  WARN [2014-10-10 20:37:58,507] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'WebLink': Unable to get bean for id 'WebLink'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.534
+!MESSAGE  WARN [2014-10-10 20:37:58,533] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'WorkflowAlert': Unable to get bean for id 'WorkflowAlert'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.536
+!MESSAGE  WARN [2014-10-10 20:37:58,535] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'WorkflowFieldUpdate': Unable to get bean for id 'WorkflowFieldUpdate'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.538
+!MESSAGE  WARN [2014-10-10 20:37:58,537] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'WorkflowKnowledgePublish': Unable to get bean for id 'WorkflowKnowledgePublish'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.540
+!MESSAGE  WARN [2014-10-10 20:37:58,539] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'WorkflowOutboundMessage': Unable to get bean for id 'WorkflowOutboundMessage'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.545
+!MESSAGE  WARN [2014-10-10 20:37:58,545] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'WorkflowRule': Unable to get bean for id 'WorkflowRule'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.547
+!MESSAGE  WARN [2014-10-10 20:37:58,546] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'WorkflowSend': Unable to get bean for id 'WorkflowSend'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.548
+!MESSAGE  WARN [2014-10-10 20:37:58,548] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'WorkflowTask': Unable to get bean for id 'WorkflowTask'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.598
+!MESSAGE  WARN [2014-10-10 20:37:58,597] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'ExternalDataSource': Unable to get bean for id 'ExternalDataSource'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:37:58.604
+!MESSAGE  WARN [2014-10-10 20:37:58,603] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'SamlSsoConfig': Unable to get bean for id 'SamlSsoConfig'
+
+
+!ENTRY org.eclipse.jface 2 0 2014-10-10 20:37:58.913
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:763)
+	at org.eclipse.jface.viewers.ColumnViewer.refresh(ColumnViewer.java:530)
+	at org.eclipse.jface.viewers.StructuredViewer.refresh(StructuredViewer.java:1414)
+	at com.salesforce.ide.ui.packagemanifest.PackageManifestTree$5.runInUIThread(PackageManifestTree.java:501)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:134)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3342)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3071)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:327)
+	at org.eclipse.jface.dialogs.MessageDialog.open(MessageDialog.java:357)
+	at org.eclipse.jface.dialogs.MessageDialog.openWarning(MessageDialog.java:470)
+	at com.salesforce.ide.core.internal.utils.Utils.openWarn(Utils.java:378)
+	at com.salesforce.ide.ui.packagemanifest.PackageManifestController.logAndDisplayWarnMsgIfNeeded(PackageManifestController.java:737)
+	at com.salesforce.ide.ui.packagemanifest.PackageManifestController.createModel(PackageManifestController.java:858)
+	at com.salesforce.ide.ui.packagemanifest.PackageManifestController.updateManifest(PackageManifestController.java:171)
+	at com.salesforce.ide.ui.packagemanifest.PackageManifestController.getEnabledCompTypeTreeNodes(PackageManifestController.java:430)
+	at com.salesforce.ide.ui.packagemanifest.PackageManifestTree$ManifestContentProvider.getElements(PackageManifestTree.java:688)
+	at org.eclipse.jface.viewers.StructuredViewer.getRawChildren(StructuredViewer.java:959)
+	at org.eclipse.jface.viewers.ColumnViewer.getRawChildren(ColumnViewer.java:703)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getRawChildren(AbstractTreeViewer.java:1330)
+	at org.eclipse.jface.viewers.TreeViewer.getRawChildren(TreeViewer.java:390)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getFilteredChildren(AbstractTreeViewer.java:636)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getSortedChildren(AbstractTreeViewer.java:602)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$1.run(AbstractTreeViewer.java:799)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.createChildren(AbstractTreeViewer.java:776)
+	at org.eclipse.jface.viewers.TreeViewer.createChildren(TreeViewer.java:639)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalInitializeTree(AbstractTreeViewer.java:1490)
+	at org.eclipse.jface.viewers.TreeViewer.internalInitializeTree(TreeViewer.java:828)
+	at org.eclipse.jface.viewers.AbstractTreeViewer$5.run(AbstractTreeViewer.java:1474)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1392)
+	at org.eclipse.jface.viewers.TreeViewer.preservingSelection(TreeViewer.java:402)
+	at org.eclipse.jface.viewers.StructuredViewer.preservingSelection(StructuredViewer.java:1353)
+	at org.eclipse.jface.viewers.CheckboxTreeViewer.preservingSelection(CheckboxTreeViewer.java:416)
+	at com.salesforce.ide.ui.packagemanifest.PackageManifestTree$PackageManifestTreeViewer.preservingSelection(PackageManifestTree.java:418)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.inputChanged(AbstractTreeViewer.java:1467)
+	at org.eclipse.jface.viewers.ContentViewer.setInput(ContentViewer.java:274)
+	at org.eclipse.jface.viewers.StructuredViewer.setInput(StructuredViewer.java:1634)
+	at com.salesforce.ide.ui.packagemanifest.PackageManifestTree.updateTree(PackageManifestTree.java:1684)
+	at com.salesforce.ide.ui.wizards.project.ProjectCustomComponentsComposite.initialize(ProjectCustomComponentsComposite.java:107)
+	at com.salesforce.ide.ui.wizards.project.ProjectCustomComponentsComposite.<init>(ProjectCustomComponentsComposite.java:64)
+	at com.salesforce.ide.ui.wizards.project.ProjectCustomComponentsDialog.createDialogArea(ProjectCustomComponentsDialog.java:54)
+	at org.eclipse.jface.dialogs.Dialog.createContents(Dialog.java:760)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1089)
+	at com.salesforce.ide.ui.wizards.project.ProjectCustomComponentsDialog.create(ProjectCustomComponentsDialog.java:153)
+	at org.eclipse.jface.window.Window.open(Window.java:790)
+	at com.salesforce.ide.ui.wizards.project.ProjectProjectContentComposite$9.widgetDefaultSelected(ProjectProjectContentComposite.java:294)
+	at com.salesforce.ide.ui.wizards.project.ProjectProjectContentComposite$9.widgetSelected(ProjectProjectContentComposite.java:308)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:228)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1598)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1622)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1607)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1396)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3484)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3068)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:825)
+	at org.eclipse.jface.window.Window.open(Window.java:801)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:135)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1598)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1622)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1607)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1396)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3484)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3068)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.418
+!MESSAGE  WARN [2014-10-10 20:41:39,405] (BuilderPayload.java:filterComponentsInConflict:264) - Retrieve result contains problem messages:
+ (1) classes/ExampleClass.cls: In field: specific ids - no ApexClass named ExampleClass found
+ (2) classes/ExampleClass.cls-meta.xml: In field: specific ids - no ApexClass named ExampleClass found
+ (3) classes/IApexController.cls: In field: specific ids - no ApexClass named IApexController found
+ (4) classes/IApexController.cls-meta.xml: In field: specific ids - no ApexClass named IApexController found
+ (5) classes/RemoteTKController.cls: In field: specific ids - no ApexClass named RemoteTKController found
+ (6) classes/RemoteTKController.cls-meta.xml: In field: specific ids - no ApexClass named RemoteTKController found
+ (7) classes/TestRemoteTKController.cls: In field: specific ids - no ApexClass named TestRemoteTKController found
+ (8) classes/TestRemoteTKController.cls-meta.xml: In field: specific ids - no ApexClass named TestRemoteTKController found
+ (9) classes/Test_Security_RemoteController.cls: In field: specific ids - no ApexClass named Test_Security_RemoteController found
+ (10) classes/Test_Security_RemoteController.cls-meta.xml: In field: specific ids - no ApexClass named Test_Security_RemoteController found
+ (11) classes/Test_ThreeVotApiController.cls: In field: specific ids - no ApexClass named Test_ThreeVotApiController found
+ (12) classes/Test_ThreeVotApiController.cls-meta.xml: In field: specific ids - no ApexClass named Test_ThreeVotApiController found
+ (13) classes/Test_ThreevotApiOperations.cls: In field: specific ids - no ApexClass named Test_ThreevotApiOperations found
+ (14) classes/Test_ThreevotApiOperations.cls-meta.xml: In field: specific ids - no ApexClass named Test_ThreevotApiOperations found
+ (15) classes/ThreeVotApiController.cls: In field: specific ids - no ApexClass named ThreeVotApiController found
+ (16) classes/ThreeVotApiController.cls-meta.xml: In field: specific ids - no ApexClass named ThreeVotApiController found
+ (17) classes/ThreeVotApiOperations.cls: In field: specific ids - no ApexClass named ThreeVotApiOperations found
+ (18) classes/ThreeVotApiOperations.cls-meta.xml: In field: specific ids - no ApexClass named ThreeVotApiOperations found
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.420
+!MESSAGE  WARN [2014-10-10 20:41:39,420] (BuilderPayload.java:filterComponentsInConflict:268) - Remote retrieve result count [0] does not equal request count [18].
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.421
+!MESSAGE  WARN [2014-10-10 20:41:39,421] (ProjectPackageList.java:getComponentByFilePath:717) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.421
+!MESSAGE  WARN [2014-10-10 20:41:39,421] (BuilderPayload.java:conflictCheck:309) - ApexClass 'classes/ExampleClass.cls-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.422
+!MESSAGE  WARN [2014-10-10 20:41:39,422] (ProjectPackageList.java:getComponentByFilePath:717) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.422
+!MESSAGE  WARN [2014-10-10 20:41:39,422] (BuilderPayload.java:conflictCheck:309) - ApexClass 'classes/ExampleClass.cls' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.422
+!MESSAGE  WARN [2014-10-10 20:41:39,422] (ProjectPackageList.java:getComponentByFilePath:717) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.423
+!MESSAGE  WARN [2014-10-10 20:41:39,422] (BuilderPayload.java:conflictCheck:309) - ApexClass 'classes/IApexController.cls-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.423
+!MESSAGE  WARN [2014-10-10 20:41:39,423] (ProjectPackageList.java:getComponentByFilePath:717) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.423
+!MESSAGE  WARN [2014-10-10 20:41:39,423] (BuilderPayload.java:conflictCheck:309) - ApexClass 'classes/IApexController.cls' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.424
+!MESSAGE  WARN [2014-10-10 20:41:39,423] (ProjectPackageList.java:getComponentByFilePath:717) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.424
+!MESSAGE  WARN [2014-10-10 20:41:39,424] (BuilderPayload.java:conflictCheck:309) - ApexClass 'classes/RemoteTKController.cls-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.424
+!MESSAGE  WARN [2014-10-10 20:41:39,424] (ProjectPackageList.java:getComponentByFilePath:717) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.424
+!MESSAGE  WARN [2014-10-10 20:41:39,424] (BuilderPayload.java:conflictCheck:309) - ApexClass 'classes/RemoteTKController.cls' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.425
+!MESSAGE  WARN [2014-10-10 20:41:39,425] (ProjectPackageList.java:getComponentByFilePath:717) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.425
+!MESSAGE  WARN [2014-10-10 20:41:39,425] (BuilderPayload.java:conflictCheck:309) - ApexClass 'classes/TestRemoteTKController.cls-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.425
+!MESSAGE  WARN [2014-10-10 20:41:39,425] (ProjectPackageList.java:getComponentByFilePath:717) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.426
+!MESSAGE  WARN [2014-10-10 20:41:39,425] (BuilderPayload.java:conflictCheck:309) - ApexClass 'classes/TestRemoteTKController.cls' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.426
+!MESSAGE  WARN [2014-10-10 20:41:39,426] (ProjectPackageList.java:getComponentByFilePath:717) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.426
+!MESSAGE  WARN [2014-10-10 20:41:39,426] (BuilderPayload.java:conflictCheck:309) - ApexClass 'classes/Test_Security_RemoteController.cls-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.426
+!MESSAGE  WARN [2014-10-10 20:41:39,426] (ProjectPackageList.java:getComponentByFilePath:717) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.427
+!MESSAGE  WARN [2014-10-10 20:41:39,427] (BuilderPayload.java:conflictCheck:309) - ApexClass 'classes/Test_Security_RemoteController.cls' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.427
+!MESSAGE  WARN [2014-10-10 20:41:39,427] (ProjectPackageList.java:getComponentByFilePath:717) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.427
+!MESSAGE  WARN [2014-10-10 20:41:39,427] (BuilderPayload.java:conflictCheck:309) - ApexClass 'classes/Test_ThreeVotApiController.cls-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.428
+!MESSAGE  WARN [2014-10-10 20:41:39,427] (ProjectPackageList.java:getComponentByFilePath:717) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.428
+!MESSAGE  WARN [2014-10-10 20:41:39,428] (BuilderPayload.java:conflictCheck:309) - ApexClass 'classes/Test_ThreeVotApiController.cls' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.428
+!MESSAGE  WARN [2014-10-10 20:41:39,428] (ProjectPackageList.java:getComponentByFilePath:717) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.428
+!MESSAGE  WARN [2014-10-10 20:41:39,428] (BuilderPayload.java:conflictCheck:309) - ApexClass 'classes/Test_ThreevotApiOperations.cls-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.429
+!MESSAGE  WARN [2014-10-10 20:41:39,429] (ProjectPackageList.java:getComponentByFilePath:717) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.429
+!MESSAGE  WARN [2014-10-10 20:41:39,429] (BuilderPayload.java:conflictCheck:309) - ApexClass 'classes/Test_ThreevotApiOperations.cls' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.429
+!MESSAGE  WARN [2014-10-10 20:41:39,429] (ProjectPackageList.java:getComponentByFilePath:717) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.430
+!MESSAGE  WARN [2014-10-10 20:41:39,430] (BuilderPayload.java:conflictCheck:309) - ApexClass 'classes/ThreeVotApiController.cls-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.430
+!MESSAGE  WARN [2014-10-10 20:41:39,430] (ProjectPackageList.java:getComponentByFilePath:717) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.430
+!MESSAGE  WARN [2014-10-10 20:41:39,430] (BuilderPayload.java:conflictCheck:309) - ApexClass 'classes/ThreeVotApiController.cls' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.431
+!MESSAGE  WARN [2014-10-10 20:41:39,431] (ProjectPackageList.java:getComponentByFilePath:717) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.431
+!MESSAGE  WARN [2014-10-10 20:41:39,431] (BuilderPayload.java:conflictCheck:309) - ApexClass 'classes/ThreeVotApiOperations.cls-meta.xml' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.431
+!MESSAGE  WARN [2014-10-10 20:41:39,431] (ProjectPackageList.java:getComponentByFilePath:717) - Component not found - component list is null or empty or file path is null
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:41:39.432
+!MESSAGE  WARN [2014-10-10 20:41:39,431] (BuilderPayload.java:conflictCheck:309) - ApexClass 'classes/ThreeVotApiOperations.cls' [unpackaged] not found in remote project package list.  Assuming no conflict.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:43:06.769
+!MESSAGE  WARN [2014-10-10 20:43:06,766] (ProjectPackageList.java:getComponentByMetadataFilePath:826) - Did not find component for 'classes/Test_Security_RemoteController.cls'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:43:06.770
+!MESSAGE  WARN [2014-10-10 20:43:06,770] (ProjectService.java:handleRetrieveMessages:2180) - Unable to handle retrieve message - could not find component 'classes/Test_Security_RemoteController.cls' for message 'In field: specific ids - no ApexClass named Test_Security_RemoteController found'
+
+
+!ENTRY com.salesforce.ide.core 4 0 2014-10-10 20:43:17.315
+!MESSAGE ERROR [2014-10-10 20:43:17,315] (ProjectPackageList.java:generateComponents:473) - Filepath-zip mapping is null or empty for package 'unpackaged' [null] - skipping component generation
+
+
+!ENTRY com.salesforce.ide.core 4 0 2014-10-10 20:43:18.381
+!MESSAGE ERROR [2014-10-10 20:43:18,381] (ProjectPackageList.java:generateComponents:473) - Filepath-zip mapping is null or empty for package 'unpackaged' [null] - skipping component generation
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:56:11.719
+!MESSAGE  WARN [2014-10-10 20:56:11,714] (ConnectionFactory.java:clearCache:212) - Clearing the following cached connections
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:56:11.722
+!MESSAGE  WARN [2014-10-10 20:56:11,722] (DescribeObjectRegistry.java:clearCache:657) - Clearing cached describes
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-10 20:56:11.723
+!MESSAGE  WARN [2014-10-10 20:56:11,722] (MetadataFactory.java:clearCache:123) - Clearing the following cached metadata stubs
+
+!SESSION 2014-10-11 00:29:57.728 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=carbon, NL=en_US
+Framework arguments:  -keyring /Users/roberto/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws carbon -arch x86 -keyring /Users/roberto/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-10-11 00:30:02.339
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:30:19.166
+!MESSAGE  WARN [2014-10-11 05:30:19,150] (BaseRetryAspect.java:isLoginExceptionRetryable:95) - Login evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:30:19.183
+!MESSAGE  WARN [2014-10-11 05:30:19,150] (BaseRetryAspect.java:isLoginExceptionRetryable:95) - Login evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:30:19.184
+!MESSAGE  WARN [2014-10-11 05:30:19,179] (BaseRetryAspect.java:isConnectionExceptionRetryable:131) - Connection evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:30:19.186
+!MESSAGE  WARN [2014-10-11 05:30:19,184] (BaseRetryAspect.java:isConnectionExceptionRetryable:131) - Connection evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:30:19.186
+!MESSAGE  WARN [2014-10-11 05:30:19,185] (BaseMultiPageEditorPart.java:run:108) - Unable to get describe object for project 'dev':Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:30:19.193
+!MESSAGE  WARN [2014-10-11 05:30:19,187] (ApexCodeScanner.java:generateKeywordRule:139) - Unable to get describe object for type project 'dev'
+
+!STACK 0
+[LoginFault [ApiFault  exceptionCode='INVALID_LOGIN'
+ exceptionMessage='Invalid username, password, security token; or user locked out.'
+ upgradeURL='null'
+ upgradeMessage='null'
+]
+]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at java.lang.Class.newInstance0(Class.java:357)
+	at java.lang.Class.newInstance(Class.java:310)
+	at com.sforce.ws.bind.TypeMapper.readSingle(TypeMapper.java:627)
+	at com.sforce.ws.bind.TypeMapper.readObject(TypeMapper.java:504)
+	at com.sforce.ws.transport.SoapConnection.parseDetail(SoapConnection.java:229)
+	at com.sforce.ws.transport.SoapConnection.createException(SoapConnection.java:203)
+	at com.sforce.ws.transport.SoapConnection.receive(SoapConnection.java:149)
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:98)
+	at com.sforce.soap.partner.wsc.PartnerConnection.login(PartnerConnection.java:1382)
+	at com.salesforce.ide.core.remote.Connection.login(Connection.java:217)
+	at com.salesforce.ide.core.remote.Connection$$FastClassByCGLIB$$8e61a81d.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at org.springframework.aop.framework.Cglib2AopProxy$CglibMethodInvocation.invokeJoinpoint(Cglib2AopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:77)
+	at com.salesforce.ide.core.internal.aspects.LoginRetryAspect.loginRetry(LoginRetryAspect.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:616)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:50)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:635)
+	at com.salesforce.ide.core.remote.Connection$$EnhancerByCGLIB$$bb6aae3f.login(<generated>)
+	at com.salesforce.ide.core.factories.ConnectionFactory.getNewConnection(ConnectionFactory.java:73)
+	at com.salesforce.ide.core.factories.ConnectionFactory.storeConnection(ConnectionFactory.java:159)
+	at com.salesforce.ide.core.factories.ConnectionFactory.getConnection(ConnectionFactory.java:126)
+	at com.salesforce.ide.core.factories.ConnectionFactory.getConnection(ConnectionFactory.java:149)
+	at com.salesforce.ide.core.remote.registries.DescribeObjectRegistry.getCachedDescribeSObjects(DescribeObjectRegistry.java:500)
+	at com.salesforce.ide.ui.editors.apex.assistance.ApexCodeScanner.generateKeywordRule(ApexCodeScanner.java:127)
+	at com.salesforce.ide.ui.editors.apex.assistance.ApexCodeScanner.init(ApexCodeScanner.java:99)
+	at com.salesforce.ide.ui.editors.apex.ApexSourceViewerConfiguration.init(ApexSourceViewerConfiguration.java:101)
+	at com.salesforce.ide.ui.editors.apex.ApexCodeEditor.initializeEditor(ApexCodeEditor.java:315)
+	at com.salesforce.ide.ui.editors.apex.ApexCodeEditor.<init>(ApexCodeEditor.java:83)
+	at com.salesforce.ide.ui.editors.apex.AstEditor.<init>(AstEditor.java:12)
+	at com.salesforce.ide.ui.editors.apex.ApexCodeMultiPageEditor.createSourcePage(ApexCodeMultiPageEditor.java:105)
+	at com.salesforce.ide.ui.editors.apex.ApexCodeMultiPageEditor.preparePages(ApexCodeMultiPageEditor.java:72)
+	at com.salesforce.ide.ui.editors.apex.ApexCodeMultiPageEditor.createPages(ApexCodeMultiPageEditor.java:64)
+	at org.eclipse.ui.part.MultiPageEditorPart.createPartControl(MultiPageEditorPart.java:357)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:662)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:462)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:595)
+	at org.eclipse.ui.internal.PartPane.setVisible(PartPane.java:313)
+	at org.eclipse.ui.internal.presentations.PresentablePart.setVisible(PresentablePart.java:180)
+	at org.eclipse.ui.internal.presentations.util.PresentablePartFolder.select(PresentablePartFolder.java:270)
+	at org.eclipse.ui.internal.presentations.util.LeftToRightTabOrder.select(LeftToRightTabOrder.java:65)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation.selectPart(TabbedStackPresentation.java:473)
+	at org.eclipse.ui.internal.PartStack.refreshPresentationSelection(PartStack.java:1256)
+	at org.eclipse.ui.internal.PartStack.setSelection(PartStack.java:1209)
+	at org.eclipse.ui.internal.PartStack.showPart(PartStack.java:1608)
+	at org.eclipse.ui.internal.PartStack.add(PartStack.java:499)
+	at org.eclipse.ui.internal.EditorStack.add(EditorStack.java:103)
+	at org.eclipse.ui.internal.PartStack.add(PartStack.java:485)
+	at org.eclipse.ui.internal.EditorStack.add(EditorStack.java:112)
+	at org.eclipse.ui.internal.EditorSashContainer.addEditor(EditorSashContainer.java:63)
+	at org.eclipse.ui.internal.EditorAreaHelper.addToLayout(EditorAreaHelper.java:225)
+	at org.eclipse.ui.internal.EditorAreaHelper.addEditor(EditorAreaHelper.java:213)
+	at org.eclipse.ui.internal.EditorManager.createEditorTab(EditorManager.java:778)
+	at org.eclipse.ui.internal.EditorManager.openEditorFromDescriptor(EditorManager.java:677)
+	at org.eclipse.ui.internal.EditorManager.openEditor(EditorManager.java:638)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(WorkbenchPage.java:2854)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2762)
+	at org.eclipse.ui.internal.WorkbenchPage.access$11(WorkbenchPage.java:2754)
+	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:2705)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2701)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2685)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2676)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:651)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:610)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:361)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:168)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:229)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:208)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:274)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:250)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:373)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$4.open(PackageExplorerPart.java:526)
+	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:48)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:842)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:888)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:48)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:175)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:840)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1101)
+	at org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1205)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:264)
+	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:258)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:298)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1598)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1622)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1607)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1396)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3484)
+	at org.eclipse.swt.widgets.Control.sendTrackEvents(Control.java:3036)
+	at org.eclipse.swt.widgets.Control.kEventControlTrack(Control.java:2116)
+	at org.eclipse.swt.widgets.Widget.controlProc(Widget.java:375)
+	at org.eclipse.swt.widgets.Display.controlProc(Display.java:863)
+	at org.eclipse.swt.internal.carbon.OS.CallNextEventHandler(Native Method)
+	at org.eclipse.swt.widgets.Tree.kEventMouseDown(Tree.java:2653)
+	at org.eclipse.swt.widgets.Widget.mouseProc(Widget.java:1362)
+	at org.eclipse.swt.widgets.Display.mouseProc(Display.java:2930)
+	at org.eclipse.swt.internal.carbon.OS.SendEventToEventTarget(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3051)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:30:57.248
+!MESSAGE  WARN [2014-10-11 05:30:57,238] (BaseRetryAspect.java:isLoginExceptionRetryable:95) - Login evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:30:57.250
+!MESSAGE  WARN [2014-10-11 05:30:57,249] (BaseRetryAspect.java:isConnectionExceptionRetryable:131) - Connection evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:30:57.252
+!MESSAGE  WARN [2014-10-11 05:30:57,250] (ApexCodeWizardPage.java:additionalInitialize:31) - Unable to check Apex Class permissions
+
+!STACK 0
+com.salesforce.ide.core.remote.InvalidLoginException: Invalid username, password, security token; or user locked out.
+	at com.salesforce.ide.core.internal.utils.ForceExceptionUtils.handleConnectionException(ForceExceptionUtils.java:70)
+	at com.salesforce.ide.core.remote.Connection.login(Connection.java:259)
+	at com.salesforce.ide.core.remote.Connection$$FastClassByCGLIB$$8e61a81d.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at org.springframework.aop.framework.Cglib2AopProxy$CglibMethodInvocation.invokeJoinpoint(Cglib2AopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:77)
+	at com.salesforce.ide.core.internal.aspects.LoginRetryAspect.loginRetry(LoginRetryAspect.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:616)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:50)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:635)
+	at com.salesforce.ide.core.remote.Connection$$EnhancerByCGLIB$$bb6aae3f.login(<generated>)
+	at com.salesforce.ide.core.factories.ConnectionFactory.getNewConnection(ConnectionFactory.java:73)
+	at com.salesforce.ide.core.factories.ConnectionFactory.storeConnection(ConnectionFactory.java:159)
+	at com.salesforce.ide.core.factories.ConnectionFactory.getConnection(ConnectionFactory.java:126)
+	at com.salesforce.ide.core.internal.components.ComponentController.isComponentEnabled(ComponentController.java:116)
+	at com.salesforce.ide.ui.wizards.components.apex.ApexCodeWizardPage.additionalInitialize(ApexCodeWizardPage.java:27)
+	at com.salesforce.ide.ui.wizards.components.ComponentWizardPage.initialize(ComponentWizardPage.java:107)
+	at com.salesforce.ide.ui.wizards.components.ComponentWizardPage.createControl(ComponentWizardPage.java:93)
+	at org.eclipse.jface.wizard.Wizard.createPageControls(Wizard.java:170)
+	at org.eclipse.jface.wizard.WizardDialog.createPageControls(WizardDialog.java:675)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:549)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1089)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:122)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1598)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1622)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1607)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1396)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3484)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3068)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+Caused by: [LoginFault [ApiFault  exceptionCode='INVALID_LOGIN'
+ exceptionMessage='Invalid username, password, security token; or user locked out.'
+ upgradeURL='null'
+ upgradeMessage='null'
+]
+]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at java.lang.Class.newInstance0(Class.java:357)
+	at java.lang.Class.newInstance(Class.java:310)
+	at com.sforce.ws.bind.TypeMapper.readSingle(TypeMapper.java:627)
+	at com.sforce.ws.bind.TypeMapper.readObject(TypeMapper.java:504)
+	at com.sforce.ws.transport.SoapConnection.parseDetail(SoapConnection.java:229)
+	at com.sforce.ws.transport.SoapConnection.createException(SoapConnection.java:203)
+	at com.sforce.ws.transport.SoapConnection.receive(SoapConnection.java:149)
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:98)
+	at com.sforce.soap.partner.wsc.PartnerConnection.login(PartnerConnection.java:1382)
+	at com.salesforce.ide.core.remote.Connection.login(Connection.java:217)
+	... 64 more
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:31:32.506
+!MESSAGE  WARN [2014-10-11 05:31:32,505] (BaseRetryAspect.java:isLoginExceptionRetryable:95) - Login evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:31:32.516
+!MESSAGE  WARN [2014-10-11 05:31:32,515] (BaseRetryAspect.java:isConnectionExceptionRetryable:131) - Connection evaluation deemed exception not retry-able:
+ LoginFault: Invalid username, password, security token; or user locked out.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:31:32.518
+!MESSAGE  WARN [2014-10-11 05:31:32,516] (ApexCodeWizardPage.java:additionalInitialize:31) - Unable to check Apex Class permissions
+
+!STACK 0
+com.salesforce.ide.core.remote.InvalidLoginException: Invalid username, password, security token; or user locked out.
+	at com.salesforce.ide.core.internal.utils.ForceExceptionUtils.handleConnectionException(ForceExceptionUtils.java:70)
+	at com.salesforce.ide.core.remote.Connection.login(Connection.java:259)
+	at com.salesforce.ide.core.remote.Connection$$FastClassByCGLIB$$8e61a81d.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invoke(MethodProxy.java:149)
+	at org.springframework.aop.framework.Cglib2AopProxy$CglibMethodInvocation.invokeJoinpoint(Cglib2AopProxy.java:700)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:149)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:77)
+	at com.salesforce.ide.core.internal.aspects.LoginRetryAspect.loginRetry(LoginRetryAspect.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:627)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:616)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:64)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:50)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:90)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:171)
+	at org.springframework.aop.framework.Cglib2AopProxy$DynamicAdvisedInterceptor.intercept(Cglib2AopProxy.java:635)
+	at com.salesforce.ide.core.remote.Connection$$EnhancerByCGLIB$$bb6aae3f.login(<generated>)
+	at com.salesforce.ide.core.factories.ConnectionFactory.getNewConnection(ConnectionFactory.java:73)
+	at com.salesforce.ide.core.factories.ConnectionFactory.storeConnection(ConnectionFactory.java:159)
+	at com.salesforce.ide.core.factories.ConnectionFactory.getConnection(ConnectionFactory.java:126)
+	at com.salesforce.ide.core.internal.components.ComponentController.isComponentEnabled(ComponentController.java:116)
+	at com.salesforce.ide.ui.wizards.components.apex.ApexCodeWizardPage.additionalInitialize(ApexCodeWizardPage.java:27)
+	at com.salesforce.ide.ui.wizards.components.ComponentWizardPage.initialize(ComponentWizardPage.java:107)
+	at com.salesforce.ide.ui.wizards.components.ComponentWizardPage.createControl(ComponentWizardPage.java:93)
+	at org.eclipse.jface.wizard.Wizard.createPageControls(Wizard.java:170)
+	at org.eclipse.jface.wizard.WizardDialog.createPageControls(WizardDialog.java:675)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:549)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1089)
+	at org.eclipse.ui.internal.actions.NewWizardShortcutAction.run(NewWizardShortcutAction.java:122)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:584)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:501)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:411)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1598)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1622)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1607)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1396)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3484)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3068)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+Caused by: [LoginFault [ApiFault  exceptionCode='INVALID_LOGIN'
+ exceptionMessage='Invalid username, password, security token; or user locked out.'
+ upgradeURL='null'
+ upgradeMessage='null'
+]
+]
+
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at java.lang.Class.newInstance0(Class.java:357)
+	at java.lang.Class.newInstance(Class.java:310)
+	at com.sforce.ws.bind.TypeMapper.readSingle(TypeMapper.java:627)
+	at com.sforce.ws.bind.TypeMapper.readObject(TypeMapper.java:504)
+	at com.sforce.ws.transport.SoapConnection.parseDetail(SoapConnection.java:229)
+	at com.sforce.ws.transport.SoapConnection.createException(SoapConnection.java:203)
+	at com.sforce.ws.transport.SoapConnection.receive(SoapConnection.java:149)
+	at com.sforce.ws.transport.SoapConnection.send(SoapConnection.java:98)
+	at com.sforce.soap.partner.wsc.PartnerConnection.login(PartnerConnection.java:1382)
+	at com.salesforce.ide.core.remote.Connection.login(Connection.java:217)
+	... 64 more
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:32:30.504
+!MESSAGE  WARN [2014-10-11 05:32:30,501] (ComponentFactory.java:getCompositeComponentFromComponent:1093) - Unable to load existing 'classes/SFC_Admin_Controller.cls-meta.xml' from project - associated component's file resource is null.  Assuming new.
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:32:30.878
+!MESSAGE  WARN [2014-10-11 05:32:30,877] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'ExternalDataSource': Unable to get bean for id 'ExternalDataSource'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:32:30.891
+!MESSAGE  WARN [2014-10-11 05:32:30,891] (ComponentFactory.java:getComponentBean:1145) - Unable to get component for id 'SamlSsoConfig': Unable to get bean for id 'SamlSsoConfig'
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:38:09.787
+!MESSAGE  WARN [2014-10-11 05:38:09,786] (ProjectService.java:handleDeployResult:1909) - Save failed!
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:38:09.798
+!MESSAGE  WARN [2014-10-11 05:38:09,797] (ProjectService.java:handleRetrieveResult:2085) - Nothing to save to project - retrieve result is empty
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:38:20.713
+!MESSAGE  WARN [2014-10-11 05:38:20,713] (ProjectService.java:handleDeployResult:1909) - Save failed!
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:38:20.724
+!MESSAGE  WARN [2014-10-11 05:38:20,724] (ProjectService.java:handleRetrieveResult:2085) - Nothing to save to project - retrieve result is empty
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:38:45.756
+!MESSAGE  WARN [2014-10-11 05:38:45,755] (ProjectService.java:handleDeployResult:1909) - Save failed!
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:38:45.768
+!MESSAGE  WARN [2014-10-11 05:38:45,768] (ProjectService.java:handleRetrieveResult:2085) - Nothing to save to project - retrieve result is empty
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 05:42:17.786
+!MESSAGE  WARN [2014-10-11 05:42:17,773] (ApexCodeEditor.java:getStatementNear:789) - An error occured while parsing the AST, the last cached version of the AST is being used
+
+!STACK 0
+apex.parser.ApexParseException: unexpected token: '}'
+	at apex.parser.ApexParser.parseClass(ApexParser.java:85)
+	at com.salesforce.ide.ui.editors.apex.ast.IdeApexClzParser.parseClass(IdeApexClzParser.java:58)
+	at com.salesforce.ide.ui.editors.apex.ast.IdeApexClzParser.parse(IdeApexClzParser.java:35)
+	at com.salesforce.ide.ui.editors.apex.ApexCodeEditor.getStatementNear(ApexCodeEditor.java:786)
+	at com.salesforce.ide.ui.editors.apex.ApexCodeEditor.getSourceElementAt(ApexCodeEditor.java:745)
+	at com.salesforce.ide.ui.editors.apex.ApexCodeEditor.computeHighlightRangeSourceReference(ApexCodeEditor.java:741)
+	at com.salesforce.ide.ui.editors.apex.ApexCodeEditor.selectionChanged(ApexCodeEditor.java:605)
+	at com.salesforce.ide.ui.editors.apex.ApexCodeEditor$EditorSelectionChangedListener.selectionChanged(ApexCodeEditor.java:598)
+	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2731)
+	at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(TextViewer.java:2679)
+	at org.eclipse.jface.text.TextViewer$5.run(TextViewer.java:2658)
+	at org.eclipse.swt.widgets.Display.runTimers(Display.java:3570)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3045)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2405)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2369)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2221)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:500)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:493)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:113)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:194)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:368)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:559)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:514)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1311)
+Caused by: NoViableAltException(104@[501:1: annotation[IStoredClass sc, boolean isSfdcCode, Modifiers o] : ( AT n= identifier ( LPAREN (k= identifier EQ (v= TRUE | v= FALSE | v= STRING_LITERAL ) )* RPAREN )? | AT n= identifier LPAREN q= STRING_LITERAL RPAREN );])
+	at org.antlr.runtime.DFA.noViableAlt(DFA.java:158)
+	at org.antlr.runtime.DFA.predict(DFA.java:116)
+	at apex.parser.gen.ApexParser.annotation(ApexParser.java:2826)
+	at apex.parser.gen.ApexParser.modifier(ApexParser.java:2650)
+	at apex.parser.gen.ApexParser.modifiers(ApexParser.java:2525)
+	at apex.parser.gen.ApexParser.classBodyDeclaration(ApexParser.java:1173)
+	at apex.parser.gen.ApexParser.classDeclaration(ApexParser.java:561)
+	at apex.parser.gen.ApexParser.typeDeclaration(ApexParser.java:397)
+	at apex.parser.ApexParser.parseClass(ApexParser.java:79)
+	... 32 more
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 06:21:17.277
+!MESSAGE  WARN [2014-10-11 06:21:17,273] (ConnectionFactory.java:clearCache:212) - Clearing the following cached connections
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 06:21:17.282
+!MESSAGE  WARN [2014-10-11 06:21:17,281] (DescribeObjectRegistry.java:clearCache:657) - Clearing cached describes
+
+
+!ENTRY com.salesforce.ide.core 2 0 2014-10-11 06:21:17.283
+!MESSAGE  WARN [2014-10-11 06:21:17,283] (MetadataFactory.java:clearCache:123) - Clearing the following cached metadata stubs
+

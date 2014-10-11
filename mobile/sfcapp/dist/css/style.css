@@ -1,0 +1,67 @@
+/*Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+._3vot{
+}
+
+.padded-container{
+	padding: 20px;
+}
+
+.company-item{
+	height: 50px;
+}
+
+.company-item.item-add{
+	background-color: green;
+	text-decoration: none;
+
+}
+
+.company-item.item-add{
+	font-size: 45px;
+	text-align: center;
+	line-height: 39px;
+	color: #fff;
+}
+
+.mobile-header{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	background-color: blue;
+}
+
+.mobile-body{
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+
+.mobile-body iframe{
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+
+.mobile-menu{
+	position: absolute;
+	left: 0px;
+	width: 100px;
+	top: 40px;
+	bottom: 0px;
+	background-color: black;
+	border-right: 2px solid #333;
+	-webkit-transition: left 1s; /* For Safari 3.1 to 6.0 */
+  transition: left 1s;
+  z-index: 1;
+}
+
+

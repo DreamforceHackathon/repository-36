@@ -1,0 +1,7 @@
+<apex:component controller="ThreeVotApiController" >
+<!-- Begin Default Content REMOVE THIS -->
+
+
+
+<!-- End Default Content REMOVE THIS -->
+</apex:component>

@@ -1,0 +1,19 @@
+@RestResource(urlMapping='/sfc/*')
+global with sharing class SFC_External_Controller {
+
+  @HttpGet
+  global static String doPost() {
+  	RestResponse res = RestContext.response;
+	res.addHeader('Access-Control-Allow-Origin', '*');
+	res.addHeader('Content-Type', 'application/json');
+   	String credentials = req.requestURI.substring(req.requestURI.lastIndexOf('/')+1);
+   	Map<string,string> parsed = JSON.deserializeuntyped(credentials);
+   	
+    Account result = [SELECT Id, sfc_token__c FROM Account WHERE sfc_username__c = :parse.get('username') and sfc_password__c = :parse.get('password') ];
+    
+    
+    return '{}';
+        
+   }
+
+}

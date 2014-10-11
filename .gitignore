@@ -1,0 +1,6 @@
+.project
+.settings
+salesforce.schema
+Referenced Packages
+node_modules
+.DS_Store

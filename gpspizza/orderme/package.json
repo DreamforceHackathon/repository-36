@@ -1,9 +1,9 @@
 {
-	"name": "adthere",
+	"name": "orderme",
 	"description": "",
-	"version": "0.0.11",
+	"version": "0.0.1",
 	"threevot": {
-		"version": "11",
+		"version": "1",
 		"screens": {
 			"0-320": "index",
 			"320-900": "index",

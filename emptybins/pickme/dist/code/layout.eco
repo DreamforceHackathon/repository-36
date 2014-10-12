@@ -3,7 +3,7 @@
 
 <div data-type="recycle" class="button_click button_click_recycle"></div>
 
-<div  data-type="recycle" class="button_click button_click_compost"></div>
+<div  data-type="compost" class="button_click button_click_compost"></div>
 
-<div  data-type="recycle" class="button_click button_click_landfill"></div>
+<div  data-type="landfill" class="button_click button_click_landfill"></div>
 

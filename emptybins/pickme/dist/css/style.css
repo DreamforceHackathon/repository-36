@@ -13,7 +13,7 @@ body{
   background-repeat: no-repeat;
   background-color: #303d1a;
   background-size: 237px 148px;
-  background-position:  center 32px;
+  background-position:  center 52px;
 }
 
 .button_click_recycle{
@@ -26,8 +26,15 @@ body{
 	margin-top:50px;
 }
 
-.button_click_recycle.click{
+.button_click_recycle.clicked{
 	background: url("../images/EmptyBin_Recycle2.png");	
+		width: 186px;
+	height: 61px;
+	margin: 0px auto;
+  background-size: 186px 61px;
+  background-position: 0px 0px;
+  	margin-top:50px;
+
 }
 
 .button_click_compost{
@@ -40,8 +47,15 @@ body{
   margin-top:20px;
 }
 
-.button_click_compost.click{
-	background: url("../images/EmptyBin_Recycle2.png");	
+.button_click_compost.clicked{
+	background: url("../images/EmptyBin_Compost2.png");	
+	width: 186px;
+	height: 61px;
+	margin: 0px auto;
+  background-size: 186px 61px;
+  background-position: 0px 0px;
+    margin-top:20px;
+
 }
 
 .button_click_landfill{
@@ -54,15 +68,21 @@ body{
   margin-top:20px;
 }
 
-.button_click_landfill.click{
+.button_click_landfill.clicked{
 	background: url("../images/EmptyBin_Landfill2.png");	
+		width: 186px;
+	height: 61px;
+	margin: 0px auto;
+  background-size: 186px 61px;
+  background-position: 0px 0px;
+    margin-top:20px;
 
 }
 
 
 
 .placeholder{
-	padding-top: 170px;
+	padding-top: 190px;
 }
 
 

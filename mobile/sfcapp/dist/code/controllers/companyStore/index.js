@@ -23,7 +23,7 @@ ObjectList.prototype.renderStore = function(){
 	this.frame = this.el.querySelector(".vf-iframe")
 	this.menu = this.el.querySelector(".mobile-menu");
 	this.appList = this.el.querySelector(".app-list");
-	this.title = this.el.querySelector(".title");
+	//this.title = this.el.querySelector(".title");
 
 	var btnMenu = this.el.querySelector(".btn-menu");
 	btnMenu.onclick = function(e){
@@ -48,7 +48,6 @@ ObjectList.prototype.activate = function(){
 	}
 
 	
-	this.title.innerHTML = sfcStore.current.Name
 	this.renderApps();
 }
 

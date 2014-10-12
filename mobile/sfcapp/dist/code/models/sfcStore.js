@@ -29,7 +29,7 @@ var Local = {
 
 var _3Model = require("3vot-model")
 
-SfcStore = _3Model.setup("SfcStore", ["Name","Logo","Apiurl","Apps","Token"]);
+SfcStore = _3Model.setup("SfcStore", ["Name", "Logo", "Apiurl", "Apps", "Token"] );
 SfcStore.extend(Local);
 
 SfcStore.prototype.loadFromCompany = function(){

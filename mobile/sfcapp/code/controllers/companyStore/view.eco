@@ -1,5 +1,8 @@
-<div class="company-store padded-container__menu">
-	
+<div class="view company-store">
+	<div class="mobile-header mobile-header__title">
+		<a class="btn-menu">|||</a>	
+	</div>
+
 	<div class="mobile-menu">
 		<div class="app-list">
 
@@ -7,15 +10,11 @@
 
 	</div>
 
-	<div class="mobile-header">
-		<a class="btn btn-primary btn-menu">|||</a>	
-		<span class="title"></span>
-	</div>
+	<div class="mobile-body mobile-body__withsmallheader">
+		  		<iframe class="embed-responsive-item vf-iframe" src=""></iframe>
 
-	<div class="mobile-body">
-  		<iframe class="embed-responsive-item vf-iframe" src=""></iframe>
-	</div>
-		
 	</div>
 
 </div>
+
+

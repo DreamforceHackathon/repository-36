@@ -19,12 +19,12 @@ body,html{
 }
 
 .grid-list-item{
+	position: relative;
 	width: 60px;
 	margin-right: 11px;
 	border-radius: 10px;
 	display: inline-block !important;
 	vertical-align: bottom;
-	overflow: hidden;
 }
 
 .grid-list-item__noapp{
@@ -59,6 +59,22 @@ body,html{
 .grid-list-item__light span{
 	font-size: 12px;
 	font-weight: 200;
+}
+
+.grid-list-item .notification{
+	background-image: url(../images/not1.png);
+	position: absolute;
+	right: -5px;
+	top: -5px;
+	width: 20px;
+	height: 20px;
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+
+}
+
+.notification__2{
+	background-image: url(../images/not2.png) !important;
 }
 
 .grid-list-item .item-add{
@@ -99,6 +115,29 @@ body,html{
 	padding: 10px 10px 10px 10px;
 }
 
+.mobile-header__title{
+	padding: 0px;
+	margin-top: 14px;
+	background-color: #1f92d8;
+	height: 18px;
+	background-image: url(../images/upload.png) !important;
+	background-size: 100px 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.mobile-header__title .btn-menu{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 20px;
+	height: 20px;
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
 
 .mobile-header .btn-back{
 	display: inline-block;	
@@ -125,21 +164,23 @@ body,html{
 
 }
 
-.mobile-header .title{
-	line-height: 30px;
-	color: #fff;
-	font-family: "Open Sans", "Arial";
-}
+
 
 .mobile-body{
-	height: 435px;
+	min-height: 435px;
 	margin-top: 25px;
 }
 
 
 .mobile-body__withheader{
-	height: 333px;
+	min-height: 333px;
 	margin-top: 15px;
+}
+
+.mobile-body__withsmallheader{
+	height: 333px;
+	margin-top: 10px;
+
 }
 
 .login-view{

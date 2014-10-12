@@ -23,6 +23,7 @@
 	    </div>
 
 			<div class="grid-list-item grid-list-item__light">
+				<div class="notification"></div>
 	    	<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> 
 	    </div>
 
@@ -35,6 +36,7 @@
 	    </div>
 
 			<div class="grid-list-item grid-list-item__light">
+				<div class="notification notification__2"></div>
 	    	<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> 
 	    </div>
 

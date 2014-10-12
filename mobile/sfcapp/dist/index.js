@@ -609,7 +609,7 @@ ObjectList.prototype.renderStore = function(){
 	this.frame = this.el.querySelector(".vf-iframe")
 	this.menu = this.el.querySelector(".mobile-menu");
 	this.appList = this.el.querySelector(".app-list");
-	this.title = this.el.querySelector(".title");
+	//this.title = this.el.querySelector(".title");
 
 	var btnMenu = this.el.querySelector(".btn-menu");
 	btnMenu.onclick = function(e){
@@ -634,7 +634,6 @@ ObjectList.prototype.activate = function(){
 	}
 
 	
-	this.title.innerHTML = sfcStore.current.Name
 	this.renderApps();
 }
 
@@ -773,7 +772,7 @@ module.exports = function(__obj) {
   }
   (function() {
     (function() {
-      __out.push('<div class="company-store padded-container__menu">\n\t\n\t<div class="mobile-menu">\n\t\t<div class="app-list">\n\n\t\t</div>\n\n\t</div>\n\n\t<div class="mobile-header">\n\t\t<a class="btn btn-primary btn-menu">|||</a>\t\n\t\t<span class="title"></span>\n\t</div>\n\n\t<div class="mobile-body">\n  \t\t<iframe class="embed-responsive-item vf-iframe" src=""></iframe>\n\t</div>\n\t\t\n\t</div>\n\n</div>\n');
+      __out.push('<div class="view company-store">\n\t<div class="mobile-header mobile-header__title">\n\t\t<a class="btn-menu">|||</a>\t\n\t</div>\n\n\t<div class="mobile-menu">\n\t\t<div class="app-list">\n\n\t\t</div>\n\n\t</div>\n\n\t<div class="mobile-body mobile-body__withsmallheader">\n\t\t  \t\t<iframe class="embed-responsive-item vf-iframe" src=""></iframe>\n\n\t</div>\n\n</div>\n\n\n');
     
     }).call(this);
     
@@ -1066,7 +1065,7 @@ module.exports = function(__obj) {
   }
   (function() {
     (function() {
-      __out.push('<div class="view">\n\t<div class="mobile-header mobile-header__colored">\n\t\t<a class="btn-back"> < </a>\n\t\t\t<input class=" " />\n\n\t</div>\n\n\t<div class="mobile-body__withheader">\n\t\t<div class="list-title">Available Apps</div>\t\t\n\n\t\t<div class=" company-list grid-list " style="padding-left: 14px;"></div>\n\t\t\n\t\t<div class="list-divider"></div>\n\t\t\t<div class="list-title">Upcoming Releases</div>\n\n\t\t<div class=" app-list grid-list " style="padding-left: 14px;">\n\t  \t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> \n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Delta</span> \n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> \n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> \n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> \n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> \n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> \n\t    </div>\n\n\n\t\t</div>\n\n\n\t</div>\n</div>');
+      __out.push('<div class="view">\n\t<div class="mobile-header mobile-header__colored">\n\t\t<a class="btn-back"> < </a>\n\t\t\t<input class=" " />\n\n\t</div>\n\n\t<div class="mobile-body__withheader">\n\t\t<div class="list-title">Available Apps</div>\t\t\n\n\t\t<div class=" company-list grid-list " style="padding-left: 14px;"></div>\n\t\t\n\t\t<div class="list-divider"></div>\n\t\t\t<div class="list-title">Upcoming Releases</div>\n\n\t\t<div class=" app-list grid-list " style="padding-left: 14px;">\n\t  \t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> \n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Delta</span> \n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t\t\t\t<div class="notification"></div>\n\t    \t<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> \n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> \n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> \n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t\t\t\t<div class="notification notification__2"></div>\n\t    \t<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> \n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> \n\t    </div>\n\n\n\t\t</div>\n\n\n\t</div>\n</div>');
     
     }).call(this);
     
@@ -1216,7 +1215,7 @@ var Local = {
 
 var _3Model = require("3vot-model")
 
-SfcStore = _3Model.setup("SfcStore", ["Name","Logo","Apiurl","Apps","Token"]);
+SfcStore = _3Model.setup("SfcStore", ["Name", "Logo", "Apiurl", "Apps", "Token"] );
 SfcStore.extend(Local);
 
 SfcStore.prototype.loadFromCompany = function(){

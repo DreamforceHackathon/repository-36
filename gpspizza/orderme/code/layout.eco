@@ -1,9 +1,9 @@
 
-<div class="placeholder">
 
-<div data-type="recycle" class="button_click button_click_recycle"></div>
 
-<div  data-type="compost" class="button_click button_click_compost"></div>
+<div class="label1"></div>
 
-<div  data-type="landfill" class="button_click button_click_landfill"></div>
+<div  class="button_click"></div>
+
+<div   class="label2"></div>
 

@@ -249,7 +249,7 @@ module.exports = function(__obj) {
   }
   (function() {
     (function() {
-      __out.push('\n<div class="placeholder">\n\n<div data-type="recycle" class="button_click button_click_recycle"></div>\n\n<div  data-type="compost" class="button_click button_click_compost"></div>\n\n<div  data-type="landfill" class="button_click button_click_landfill"></div>\n\n');
+      __out.push('\n\n\n<div class="label1"></div>\n\n<div  class="button_click"></div>\n\n<div   class="label2"></div>\n\n');
     
     }).call(this);
     
@@ -351,28 +351,24 @@ window.start = function(token){
 
 
 	var btn = container.querySelector(".button_click");
-	container.onclick = function(e){
+	btn.onclick = function(e){
 		if(!e.target.classList.contains('button_click')) return false;
 		e.target.classList.add("clicked")
 		types.push(e.target.dataset.type)
 		reportPick();
+		btn.onclick = function(){}
 	}
 
 	function reportPick(){
 
-		setTimeout(function(){
-
 			var account = Account.first()		
 			
 			Case.create({ 
-				"Type": "Empty the Bins!",
-				"Subject": "Pick up " + types.join(", ") + " for " + account.Name,
+				"Type": "Order",
+				"Subject": "Send Pizza to Latitude:37.801429°, Longitude:-122.433081°",
 				"Origin":"Customer App",
 				"AccountId": account.id
 			 })
-
-		},2000)
-
 
 	}
 

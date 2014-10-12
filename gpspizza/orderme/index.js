@@ -21,28 +21,24 @@ window.start = function(token){
 
 
 	var btn = container.querySelector(".button_click");
-	container.onclick = function(e){
+	btn.onclick = function(e){
 		if(!e.target.classList.contains('button_click')) return false;
 		e.target.classList.add("clicked")
 		types.push(e.target.dataset.type)
 		reportPick();
+		btn.onclick = function(){}
 	}
 
 	function reportPick(){
 
-		setTimeout(function(){
-
 			var account = Account.first()		
 			
 			Case.create({ 
-				"Type": "Empty the Bins!",
-				"Subject": "Pick up " + types.join(", ") + " for " + account.Name,
+				"Type": "Order",
+				"Subject": "Send Pizza to Latitude:37.801429°, Longitude:-122.433081°",
 				"Origin":"Customer App",
 				"AccountId": account.id
 			 })
-
-		},2000)
-
 
 	}
 

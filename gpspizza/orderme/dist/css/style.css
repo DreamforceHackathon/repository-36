@@ -9,87 +9,45 @@ body{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
 	font-weight: 300;
-	background: url("../images/EmptyBin_logo_237_148.png");
-  background-repeat: no-repeat;
-  background-color: #303d1a;
-  background-size: 237px 148px;
-  background-position:  center 52px;
+	background-color: #e89d25;
 }
 
-.button_click_recycle{
-	background: url("../images/EmptyBin_Recycle1.png");	
-	width: 186px;
-	height: 61px;
+.label1{
+	background: url("../images/Pizza-top_249px_77px.png");	
+	width: 281px;
+	height: 101px;
 	margin: 0px auto;
-  background-size: 186px 61px;
+  background-size: 281px 101px;
   background-position: 0px 0px;
-	margin-top:50px;
+	margin-top:49px;	
 }
 
-.button_click_recycle.clicked{
-	background: url("../images/EmptyBin_Recycle2.png");	
-		width: 186px;
-	height: 61px;
+.button_click{
+	background: url("../images/Pizza-Button1_168px_168px.png");	
+		width: 168px;
+	height: 168px;
 	margin: 0px auto;
-  background-size: 186px 61px;
+  background-size: 168px 168px;
   background-position: 0px 0px;
-  	margin-top:50px;
-
+  	margin-top:49px;
 }
 
-.button_click_compost{
-	background: url("../images/EmptyBin_Compost1.png");	
-	width: 186px;
-	height: 61px;
+.button_click.clicked{
+	background: url("../images/Pizza-Button2_168px_168px.png");	
+		width: 168px;
+	height: 168px;
 	margin: 0px auto;
-  background-size: 186px 61px;
+  background-size: 168px 168px;
   background-position: 0px 0px;
-  margin-top:20px;
+  	margin-top:49px;
 }
 
-.button_click_compost.clicked{
-	background: url("../images/EmptyBin_Compost2.png");	
-	width: 186px;
-	height: 61px;
+.label2{
+	background: url("../images/Pizza-bottom_191px_74.png");	
+	width: 281px;
+	height: 101px;
 	margin: 0px auto;
-  background-size: 186px 61px;
+  background-size: 281px 101px;
   background-position: 0px 0px;
-    margin-top:20px;
-
+  margin-top:51px;
 }
-
-.button_click_landfill{
-	background: url("../images/EmptyBin_Landfill1.png");	
-	width: 186px;
-	height: 61px;
-	margin: 0px auto;
-  background-size: 186px 61px;
-  background-position: 0px 0px;
-  margin-top:20px;
-}
-
-.button_click_landfill.clicked{
-	background: url("../images/EmptyBin_Landfill2.png");	
-		width: 186px;
-	height: 61px;
-	margin: 0px auto;
-  background-size: 186px 61px;
-  background-position: 0px 0px;
-    margin-top:20px;
-
-}
-
-
-
-.placeholder{
-	padding-top: 190px;
-}
-
-
-
-
-::-webkit-input-placeholder {
-   color: #4a77a0;
-   font-size: 30px;
-}
-

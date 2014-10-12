@@ -395,7 +395,7 @@ module.exports = function(__obj) {
   }
   (function() {
     (function() {
-      __out.push('\t  <div class="col-xs-3 col-md-3 ">\n\t    <a class="thumbnail company-item item-add">\n\t    \t+\n\t    </a>\n\t  </div>');
+      __out.push('<div class="grid-list-item grid-list-item__noapp " style="padding-right: 0px;margin-left: 0px;">\n\t<a class=" company-item  item-add">\n\t\t\n\t\t<svg class=" " style="position: relative; left: 0px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="00px" y="0px"\n\t\twidth="48.497px" height="50px" viewBox="0 0 48.497 50" enable-background="new 0 0 48.497 50" xml:space="preserve">\n\n\t\t\t<g class="" id="Layer_33">\n\n\t\t\t<g class="">\n\t\t\t<path fill="#FFFFFF" d="M27.256,0v22.087h21.241v5.639H27.256V50h-6.015V27.726H0v-5.639h21.241V0H27.256z"/>\n\t\t\t</g>\n\t\t\t</g>\n\t\t</svg>\n\n\t</a>\n</div>');
     
     }).call(this);
     
@@ -425,11 +425,18 @@ function ObjectList(){
 
 	this.list = this.el.querySelector(".company-list")
 	this.el.onclick = function(e){
-		if(e.target.classList.contains('item-add') == false){
-			that.onItemClick(e);
-		}
-		else if(e.target.classList.contains('item-add') ){
-			that.onItemAdd(e);
+		var target = e.target;
+		var found=false;
+		while(!found){
+			if(target.classList.contains('item-company') ){
+				that.onItemClick(e);
+				found=true;
+			}
+			else if(target.classList.contains('item-add') ){
+				that.onItemAdd(e);
+				found=true
+			}
+			else target = target.parentNode;
 		}
 	}
 
@@ -459,6 +466,8 @@ ObjectList.prototype.onItemClick = function(e){
 	var target = e.target;
 	if( !target.classList.contains("item-company") ) target = target.parentNode;
 	
+
+
 	var id = target.dataset.id;
 
 	this.emit("SELECT_COMPANY",id)
@@ -510,15 +519,15 @@ module.exports = function(__obj) {
   }
   (function() {
     (function() {
-      __out.push('\t  <div class="col-xs-3 col-md-3 ">\n\t    <a class="thumbnail company-item item-company" data-id="');
+      __out.push('\t  <div class="grid-list-item ">\n\t    <div  class="icon  company-item item-company " data-id="');
     
       __out.push(__sanitize(this.id));
     
-      __out.push('">\n\t    \t<span>');
+      __out.push('">\n\t    </div>\n\t    <span>');
     
       __out.push(__sanitize(this.Name));
     
-      __out.push('</span>\n\t    </a>\n\n\n\t  </div>\n');
+      __out.push('</span>\n\n\n\t  </div>\n');
     
     }).call(this);
     
@@ -566,7 +575,7 @@ module.exports = function(__obj) {
   }
   (function() {
     (function() {
-      __out.push('<div>\n\n\t<div class="mobile-header">\n\t\t<span class="title">Pick or add a Company</span>\t\n\t</div>\n\n\t<div class="padded-container">\n\n\t\t<div class="row company-list ">\n\n\t\t</div>\n\t</div>\n\n</div>');
+      __out.push('<div class="mobile-body">\n\t\n\t<div class="company-list grid-list ">\n\n\t</div>\n\n\t<div class="powered" ></div>\n\n</div>\n');
     
     }).call(this);
     
@@ -579,7 +588,6 @@ module.exports = function(__obj) {
 
 var Layout = require("./view")
 var Item = require("./item")
-
 
 var sfcStore = require("../../models/sfcStore");
 
@@ -616,9 +624,16 @@ ObjectList.prototype.renderStore = function(){
 }
 
 ObjectList.prototype.activate = function(){
+	document.domain = "force.com"
+	var that = this;
 	this.renderStore();
 	this.adjustIFrame();
-	this.frame.src= sfcStore.current.Apiurl + "/" + sfcStore.current.Apps[0]
+	this.frame.src = sfcStore.current.Apiurl + "/" + sfcStore.current.Apps[0]
+	this.frame.onload = function(){ 
+		that.frame.contentWindow.start(sfcStore.current.Token) 
+	}
+
+	
 	this.title.innerHTML = sfcStore.current.Name
 	this.renderApps();
 }
@@ -758,7 +773,7 @@ module.exports = function(__obj) {
   }
   (function() {
     (function() {
-      __out.push('<div class="company-store">\n\t\n\t<div class="mobile-menu">\n\t\t<div class="app-list">\n\n\t\t</div>\n\n\t</div>\n\n\t<div class="mobile-header">\n\t\t<a class="btn btn-primary btn-menu">|||</a>\t\n\t\t<span class="title"></span>\n\t</div>\n\n\t<div class="mobile-body">\n  \t\t<iframe class="embed-responsive-item vf-iframe" src=""></iframe>\n\t</div>\n\t\t\n\t</div>\n\n</div>\n');
+      __out.push('<div class="company-store padded-container__menu">\n\t\n\t<div class="mobile-menu">\n\t\t<div class="app-list">\n\n\t\t</div>\n\n\t</div>\n\n\t<div class="mobile-header">\n\t\t<a class="btn btn-primary btn-menu">|||</a>\t\n\t\t<span class="title"></span>\n\t</div>\n\n\t<div class="mobile-body">\n  \t\t<iframe class="embed-responsive-item vf-iframe" src=""></iframe>\n\t</div>\n\t\t\n\t</div>\n\n</div>\n');
     
     }).call(this);
     
@@ -773,6 +788,9 @@ module.exports = function(__obj) {
 
 var Layout = require("./view")
 var domify = require('domify');
+
+var sfcStore = require("../../models/sfcStore");
+
 
 var inherits = require('inherits');
 var EventEmitter = require('events').EventEmitter;
@@ -801,16 +819,24 @@ function ObjectList(){
 }
 inherits(ObjectList, EventEmitter);
 
+ObjectList.prototype.activate = function(){
+	this.el.querySelector(".account_name").innerHTML = sfcStore.current.Name;
+}
+
 
 ObjectList.prototype.loginToApi = function(e){
 	
-	var url = 'https://jsonp.nodejitsu.com/?url=https://sf1c-developer-edition.na17.force.com/api/services/apexrest/sfc?credentials={"username": "user","password":"pass"}';
+	var url = 'https://jsonp.nodejitsu.com/?url='+ sfcStore.current.Apiurl +'/services/apexrest/sfc?credentials={"username": "user","password":"pass"}';
 	var that = this;
   superagent.get(url).end(function(res){
-    var parsed = JSON.parse(res.body);
-
-    that.emit("LOGIN_COMPLETE", parsed);
-  })
+    if(res.ok){
+    	var parsed = JSON.parse(res.body);
+    	that.emit("LOGIN_COMPLETE", parsed);
+    }
+    else{
+			that.emit("BACK");
+    }
+  }).on('error', function(){ that.emit("BACK"); })
 
 }
 
@@ -824,7 +850,7 @@ ObjectList.prototype.onSend = function(e){
 }
 
 ObjectList.prototype.onCancel = function(e){
-	this.emit("LOGIN_CANCEL");
+	this.emit("BACK");
 }
 
 	//Sf1Fields.trigger("OBJECT_SELECTED", objectName);
@@ -833,7 +859,7 @@ ObjectList.prototype.onCancel = function(e){
 module.exports = ObjectList;
 
 
-},{"./view":11,"domify":26,"events":1,"inherits":27,"superagent":28}],11:[function(require,module,exports){
+},{"../../models/sfcStore":17,"./view":11,"domify":26,"events":1,"inherits":27,"superagent":28}],11:[function(require,module,exports){
 module.exports = function(__obj) {
   if (!__obj) __obj = {};
   var __out = [], __capture = function(callback) {
@@ -873,7 +899,7 @@ module.exports = function(__obj) {
   }
   (function() {
     (function() {
-      __out.push('\n\n<div class="login-view padded-container">\n\t\n\t<input id="txt_username" class="form-control" />\n\n\t<input id="txt_password" type="password" class="form-control" />\n\n\t<div class="row">\n\t\t<a class="btn btn-primary btn_send pull-right">Login</a>\n\t\t<a class="btn btn-default btn_cancel">Cancel</a>\n\t</div>\n\n</div>');
+      __out.push('<div class="mobile-body">\n\t\n\t<div class="login-view">\n\t\n\t<div class="title">\n\t\tLogin to <span class="account_name"></span>\n\t</div>\n\n\t<input id="txt_username" class="form-control" />\n\n\t<input id="txt_password" type="password" class="form-control" />\n\n\t<div class="row">\n\t\t<a class="btn btn-primary btn_send pull-right">Login</a>\n\t\t<a class="btn btn-default btn_cancel">Cancel</a>\n\t</div>\n\n</div>\n\n\t<div class="powered" ></div>\n\n</div>\n\n\n');
     
     }).call(this);
     
@@ -931,7 +957,9 @@ ObjectList.prototype.render = function(){
 }
 
 ObjectList.prototype.onItemClick = function(e){
+
 	var id = e.target.dataset.id;
+	
 	this.emit("SELECT_COMPANY",id)
 }
 
@@ -982,19 +1010,15 @@ module.exports = function(__obj) {
   }
   (function() {
     (function() {
-      __out.push('\t  <li class="list-group-item" data-id="');
+      __out.push('\n\t  <div class="grid-list-item grid-list-item__light">\n\t    <div  class="icon  company-item item-company " data-id="');
     
       __out.push(__sanitize(this.id));
     
-      __out.push('">\n\t\t    <a class=" company-item item-company" data-id="');
-    
-      __out.push(__sanitize(this.id));
-    
-      __out.push('">\n\t\t    </a>\n\t\t    \t\t    ');
+      __out.push('">\n\t    </div>\n\t    <span>');
     
       __out.push(__sanitize(this.Name));
     
-      __out.push('\n\n\t\t  </li>');
+      __out.push('</span>\n\n\t  </div>\n');
     
     }).call(this);
     
@@ -1042,7 +1066,7 @@ module.exports = function(__obj) {
   }
   (function() {
     (function() {
-      __out.push('<div>\n\n\t<div class="mobile-header">\n\t\t<a class="btn-back btn btn-default"> Back </a>\n\t\t<span class="title">Company Store</span>\n\t</div>\n\n<div class="padded-container">\n\t<div class="searchCompany">\n\t\t<input />\n\t\t<a class="btn btn-primary"> Search </a>\n\n\t\t<hr/>\n\n\t\t<div class="row company-list list-group">\n\n\t\n\t\t</div>\n\t</div>\n</div>\n\n</div>');
+      __out.push('<div class="view">\n\t<div class="mobile-header mobile-header__colored">\n\t\t<a class="btn-back"> < </a>\n\t\t\t<input class=" " />\n\n\t</div>\n\n\t<div class="mobile-body__withheader">\n\t\t<div class="list-title">Available Apps</div>\t\t\n\n\t\t<div class=" company-list grid-list " style="padding-left: 14px;"></div>\n\t\t\n\t\t<div class="list-divider"></div>\n\t\t\t<div class="list-title">Upcoming Releases</div>\n\n\t\t<div class=" app-list grid-list " style="padding-left: 14px;">\n\t  \t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> \n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Delta</span> \n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> \n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> \n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> \n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> \n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> \n\t    </div>\n\n\n\t\t</div>\n\n\n\t</div>\n</div>');
     
     }).call(this);
     
@@ -1055,6 +1079,7 @@ var container;
 
 var sfcStore = require("../models/sfcStore");
 
+var Ajax = require("3vot-model/lib/3vot-model-vfr");
 
 function Manager(container_param){
 	var manager = this;
@@ -1074,6 +1099,7 @@ function Manager(container_param){
 
 	this.companiesController.on("SELECT_COMPANY", function(id){
 		sfcStore.current = sfcStore.find(id);
+
 		manager.companyStoreController.activate();
 		manager.showController( manager.companyStoreController );  
 	});
@@ -1087,6 +1113,7 @@ function Manager(container_param){
 			found.save();
 			sfcStore.current = found;
 		}
+		manager.loginController.activate()
 		manager.showController( manager.loginController )  
 	});
 
@@ -1109,6 +1136,10 @@ function Manager(container_param){
 	 	manager.showController( manager.companiesController );
 	});
 
+	this.loginController.on("BACK", function(){
+	 	manager.showController( manager.searchCompanyController );
+	});
+
 	this.companyStoreController.on("BACK", function(){
 		console.log(manager.companyStoreController)
 	 	manager.showController( manager.companiesController );
@@ -1126,7 +1157,7 @@ Manager.prototype.showController = function(controller){
 }
 
 module.exports = Manager;
-},{"../controllers/companies":4,"../controllers/companyStore":7,"../controllers/login":10,"../controllers/searchCompany":12,"../models/sfcStore":17}],16:[function(require,module,exports){
+},{"../controllers/companies":4,"../controllers/companyStore":7,"../controllers/login":10,"../controllers/searchCompany":12,"../models/sfcStore":17,"3vot-model/lib/3vot-model-vfr":19}],16:[function(require,module,exports){
 //COMPANY IS IN SFC CONTROL CENTER
 
 var _3Model = require("3vot-model")

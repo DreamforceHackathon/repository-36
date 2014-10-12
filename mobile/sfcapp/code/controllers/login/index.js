@@ -5,6 +5,9 @@
 var Layout = require("./view")
 var domify = require('domify');
 
+var sfcStore = require("../../models/sfcStore");
+
+
 var inherits = require('inherits');
 var EventEmitter = require('events').EventEmitter;
 inherits(ObjectList, EventEmitter);
@@ -32,16 +35,24 @@ function ObjectList(){
 }
 inherits(ObjectList, EventEmitter);
 
+ObjectList.prototype.activate = function(){
+	this.el.querySelector(".account_name").innerHTML = sfcStore.current.Name;
+}
+
 
 ObjectList.prototype.loginToApi = function(e){
 	
-	var url = 'https://jsonp.nodejitsu.com/?url=https://sf1c-developer-edition.na17.force.com/api/services/apexrest/sfc?credentials={"username": "user","password":"pass"}';
+	var url = 'https://jsonp.nodejitsu.com/?url='+ sfcStore.current.Apiurl +'/services/apexrest/sfc?credentials={"username": "user","password":"pass"}';
 	var that = this;
   superagent.get(url).end(function(res){
-    var parsed = JSON.parse(res.body);
-
-    that.emit("LOGIN_COMPLETE", parsed);
-  })
+    if(res.ok){
+    	var parsed = JSON.parse(res.body);
+    	that.emit("LOGIN_COMPLETE", parsed);
+    }
+    else{
+			that.emit("BACK");
+    }
+  }).on('error', function(){ that.emit("BACK"); })
 
 }
 
@@ -55,7 +66,7 @@ ObjectList.prototype.onSend = function(e){
 }
 
 ObjectList.prototype.onCancel = function(e){
-	this.emit("LOGIN_CANCEL");
+	this.emit("BACK");
 }
 
 	//Sf1Fields.trigger("OBJECT_SELECTED", objectName);

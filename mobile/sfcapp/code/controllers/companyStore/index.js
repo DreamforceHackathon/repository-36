@@ -3,7 +3,6 @@
 var Layout = require("./view")
 var Item = require("./item")
 
-
 var sfcStore = require("../../models/sfcStore");
 
 var domify = require('domify');
@@ -39,9 +38,16 @@ ObjectList.prototype.renderStore = function(){
 }
 
 ObjectList.prototype.activate = function(){
+	document.domain = "force.com"
+	var that = this;
 	this.renderStore();
 	this.adjustIFrame();
-	this.frame.src= sfcStore.current.Apiurl + "/" + sfcStore.current.Apps[0]
+	this.frame.src = sfcStore.current.Apiurl + "/" + sfcStore.current.Apps[0]
+	this.frame.onload = function(){ 
+		that.frame.contentWindow.start(sfcStore.current.Token) 
+	}
+
+	
 	this.title.innerHTML = sfcStore.current.Name
 	this.renderApps();
 }

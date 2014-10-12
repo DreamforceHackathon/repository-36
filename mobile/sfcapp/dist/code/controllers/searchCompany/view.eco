@@ -1,22 +1,50 @@
-<div>
+<div class="view">
+	<div class="mobile-header mobile-header__colored">
+		<a class="btn-back"> < </a>
+			<input class=" " />
 
-	<div class="mobile-header">
-		<a class="btn-back btn btn-default"> Back </a>
-		<span class="title">Company Store</span>
 	</div>
 
-<div class="padded-container">
-	<div class="searchCompany">
-		<input />
-		<a class="btn btn-primary"> Search </a>
+	<div class="mobile-body__withheader">
+		<div class="list-title">Available Apps</div>		
 
-		<hr/>
+		<div class=" company-list grid-list " style="padding-left: 14px;"></div>
+		
+		<div class="list-divider"></div>
+			<div class="list-title">Upcoming Releases</div>
 
-		<div class="row company-list list-group">
+		<div class=" app-list grid-list " style="padding-left: 14px;">
+	  	<div class="grid-list-item grid-list-item__light">
+	    	<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> 
+	    </div>
 
-	
+			<div class="grid-list-item grid-list-item__light">
+	    	<div  class="icon  company-item item-company"></div> <span>Delta</span> 
+	    </div>
+
+			<div class="grid-list-item grid-list-item__light">
+	    	<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> 
+	    </div>
+
+			<div class="grid-list-item grid-list-item__light">
+	    	<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> 
+	    </div>
+
+			<div class="grid-list-item grid-list-item__light">
+	    	<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> 
+	    </div>
+
+			<div class="grid-list-item grid-list-item__light">
+	    	<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> 
+	    </div>
+
+			<div class="grid-list-item grid-list-item__light">
+	    	<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> 
+	    </div>
+
+
 		</div>
-	</div>
-</div>
 
+
+	</div>
 </div>

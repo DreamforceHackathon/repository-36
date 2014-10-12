@@ -63,14 +63,18 @@ Account.ajax = Ajax;
 module.exports= Account
 },{"3vot-model":7,"3vot-model/lib/3vot-model-vfr":4}],3:[function(require,module,exports){
 var Ajax = require("3vot-model/lib/3vot-model-vfr");
-Ajax.token = "abc";
+document.domain = "force.com"
 
-var Account = require("./code/models/account");
 
-Account.query("select id,name from account")
-.then( function(){ document.querySelector("._3vot").innerHTML  = JSON.stringify( Account.first()); } )
-.fail( function(err){ console.log(err);} )
+window.start = function(token){
+	Ajax.token = token;
+	var Account = require("./code/models/account");
 
+	Account.query("select id,name from account")
+	.then( function(){ document.querySelector("._3vot").innerHTML  = JSON.stringify( Account.first()); } )
+	.fail( function(err){ console.log(err);} )
+
+}
 },{"./code/models/account":2,"3vot-model/lib/3vot-model-vfr":4}],4:[function(require,module,exports){
 
 var VFR= require("./3vot-vfr")

@@ -14,7 +14,7 @@
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="41" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="41" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="104" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="156" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -33,6 +33,7 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
@@ -40,11 +41,14 @@
 <editor id="com.salesforce.ide.ui.editors.apex" name="ThreeVotApiController.cls" partName="ThreeVotApiController.cls" path="/Users/roberto/proyectos/dfhack/sfdev/dev/src/classes/ThreeVotApiController.cls" title="ThreeVotApiController.cls" tooltip="dev/src/classes/ThreeVotApiController.cls" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dev/src/classes/ThreeVotApiController.cls"/>
 </editor>
-<editor activePart="true" focus="true" id="com.salesforce.ide.ui.editors.apex" name="SFC_Controller.cls" partName="SFC_Controller.cls" path="/Users/roberto/proyectos/dfhack/sfdev/dev/src/classes/SFC_Controller.cls" title="SFC_Controller.cls" tooltip="dev/src/classes/SFC_Controller.cls" workbook="DefaultEditorWorkbook">
+<editor id="com.salesforce.ide.ui.editors.apex" name="SFC_Controller.cls" partName="SFC_Controller.cls" path="/Users/roberto/proyectos/dfhack/sfdev/dev/src/classes/SFC_Controller.cls" title="SFC_Controller.cls" tooltip="dev/src/classes/SFC_Controller.cls" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dev/src/classes/SFC_Controller.cls"/>
 </editor>
 <editor id="com.salesforce.ide.ui.editors.apex" name="RemoteTKController.cls" partName="RemoteTKController.cls" path="/Users/roberto/proyectos/dfhack/sfdev/dev/src/classes/RemoteTKController.cls" title="RemoteTKController.cls" tooltip="dev/src/classes/RemoteTKController.cls" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dev/src/classes/RemoteTKController.cls"/>
+</editor>
+<editor activePart="true" focus="true" id="com.salesforce.ide.ui.editors.apex" name="SFC_External_Controller.cls" partName="SFC_External_Controller.cls" path="/Users/roberto/proyectos/dfhack/sfdev/dev/src/classes/SFC_External_Controller.cls" title="SFC_External_Controller.cls" tooltip="dev/src/classes/SFC_External_Controller.cls" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dev/src/classes/SFC_External_Controller.cls"/>
 </editor>
 </editors>
 <views>
@@ -52,9 +56,6 @@
 <view id="com.salesforce.ide.ui.view.debugLog" partName="Execute Anonymous"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="84" org.eclipse.ui.ide.markerType="114" org.eclipse.ui.ide.pathField="144" org.eclipse.ui.ide.resourceField="114" org.eclipse.ui.ide.severityAndDescriptionField="489"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -140,10 +141,10 @@
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.help.ui.HelpView"/>
 <view id="org.eclipse.ui.cheatsheets.views.CheatSheetView"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.views.ProblemView" style="0">
 <fastViews>
-<view id="org.eclipse.ui.views.ProblemView" ratio="0.2949438"/>
 <view id="com.salesforce.ide.ui.view.runTest" ratio="0.3"/>
 <view id="com.salesforce.ide.ui.view.debugLog" ratio="0.3"/>
 <view id="org.eclipse.team.sync.views.SynchronizeView" ratio="0.25"/>
@@ -168,8 +169,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.37512338" ratioLeft="380" ratioRight="633" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.8251058" ratioLeft="585" ratioRight="124" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
+<folder appearance="2" expanded="2">
 <page content="com.salesforce.ide.ui.view.runTest" label="LabelNotFound"/>
 <page content="com.salesforce.ide.ui.view.debugLog" label="LabelNotFound"/>
 <page content="org.eclipse.team.sync.views.SynchronizeView" label="LabelNotFound"/>
@@ -188,6 +188,14 @@
 </presentation>
 </folder>
 </info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@148ecbd" ratio="0.75" ratioLeft="534" ratioRight="178" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
 </mainWindow>
 </layout>
 </perspective>
@@ -195,135 +203,152 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.salesforce.ide.ui.editors.apex" path="/dev/src/classes/ThreeVotApiController.cls"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.salesforce.ide.ui.editors.apex" path="/dev/src/classes/SFC_External_Controller.cls"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.salesforce.ide.ui.editors.apex" path="/dev/src/classes/SFC_External_Controller.cls-meta.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.salesforce.ide.ui.editors.html" path="/dev/src/components/SfcComponent.component"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.salesforce.ide.ui.editors.apex" path="/dev/src/classes/SFC_Controller.cls"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.salesforce.ide.ui.editors.apex" path="/dev/src/classes/SFC_Controller.cls-meta.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.salesforce.ide.ui.editors.apex" path="/dev/src/classes/RemoteTKController.cls"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/dev/src/classes/RemoteTKController.cls-meta.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.salesforce.ide.ui.editors.apex" path="/dev/src/classes/RemoteTKController.cls-meta.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.salesforce.ide.ui.editors.apex" path="/dev/src/classes/SFC_External_Controller.cls"/>
 </editors>
-<item historyLabel="SFC_Controller.cls" index="1"/>
-<item historyLabel="RemoteTKController.cls" index="3"/>
-<item historyLabel="SFC_Controller.cls" index="1"/>
-<item historyLabel="RemoteTKController.cls" index="3"/>
-<item historyLabel="SFC_Controller.cls" index="1"/>
-<item historyLabel="RemoteTKController.cls-meta.xml" index="4"/>
-<item historyLabel="SFC_Controller.cls" index="1"/>
-<item historyLabel="RemoteTKController.cls" index="3">
-<position/>
-</item>
-<item historyLabel="RemoteTKController.cls-meta.xml" index="5">
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SFC_Controller.cls-meta.xml" index="2">
+<item historyLabel="SFC_External_Controller.cls" index="0">
+<position/>
+</item>
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="ThreeVotApiController.cls" index="0"/>
-<item historyLabel="SFC_Controller.cls" index="1"/>
-<item historyLabel="RemoteTKController.cls" index="3">
-<position info="not_deleted" x="14339" y="0"/>
-</item>
-<item historyLabel="RemoteTKController.cls" index="3">
+<item historyLabel="SFC_External_Controller.cls" index="0">
 <position/>
 </item>
-<item historyLabel="SFC_Controller.cls" index="1"/>
-<item historyLabel="RemoteTKController.cls" index="3"/>
-<item historyLabel="SFC_Controller.cls" index="1"/>
-<item historyLabel="RemoteTKController.cls" index="3"/>
-<item historyLabel="SFC_Controller.cls" index="1">
-<position/>
-</item>
-<item historyLabel="SFC_Controller.cls" index="1">
-<position/>
-</item>
-<item historyLabel="RemoteTKController.cls" index="3">
-<position/>
-</item>
-<item historyLabel="RemoteTKController.cls" index="3">
-<position/>
-</item>
-<item historyLabel="SFC_Controller.cls" index="1"/>
-<item historyLabel="RemoteTKController.cls" index="3">
-<position info="not_deleted" x="2300" y="0"/>
-</item>
-<item historyLabel="RemoteTKController.cls-meta.xml" index="5">
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SFC_Controller.cls" index="1">
+<item historyLabel="SFC_External_Controller.cls" index="0">
 <position/>
 </item>
-<item historyLabel="SFC_Controller.cls" index="1">
-<position info="not_deleted" x="1352" y="0"/>
-</item>
-<item historyLabel="SFC_Controller.cls-meta.xml" index="2">
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SFC_Controller.cls" index="1">
+<item historyLabel="SFC_External_Controller.cls" index="0">
 <position/>
 </item>
-<item historyLabel="SFC_Controller.cls" index="1">
-<position info="not_deleted" x="1083" y="0"/>
-</item>
-<item historyLabel="SFC_Controller.cls-meta.xml" index="2">
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SFC_Controller.cls" index="1">
+<item historyLabel="SFC_External_Controller.cls" index="0">
 <position/>
 </item>
-<item historyLabel="SFC_Controller.cls-meta.xml" index="2">
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SFC_Controller.cls" index="1">
+<item historyLabel="SFC_External_Controller.cls" index="0">
 <position/>
 </item>
-<item historyLabel="SFC_Controller.cls" index="1">
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SFC_External_Controller.cls" index="0">
 <position/>
 </item>
-<item historyLabel="SFC_Controller.cls-meta.xml" index="2">
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SFC_Controller.cls" index="1">
+<item historyLabel="SFC_External_Controller.cls" index="0">
 <position/>
 </item>
-<item historyLabel="SFC_Controller.cls-meta.xml" index="2">
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SFC_Controller.cls" index="1">
+<item historyLabel="SFC_External_Controller.cls" index="0">
 <position/>
 </item>
-<item historyLabel="SFC_Controller.cls-meta.xml" index="2">
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SFC_Controller.cls" index="1">
+<item historyLabel="SFC_External_Controller.cls" index="0">
 <position/>
 </item>
-<item historyLabel="SFC_Controller.cls-meta.xml" index="2">
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="SFC_Controller.cls" index="1">
-<position info="not_deleted" x="5740" y="0"/>
-</item>
-<item historyLabel="SFC_Controller.cls-meta.xml" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="SFC_Controller.cls" index="1">
-<position info="not_deleted" x="6100" y="0"/>
-</item>
-<item historyLabel="SFC_Controller.cls" index="1">
-<position info="not_deleted" x="2136" y="0"/>
-</item>
-<item historyLabel="SFC_Controller.cls" index="1">
-<position info="not_deleted" x="2272" y="62"/>
-</item>
-<item historyLabel="SFC_Controller.cls" index="1">
+<item historyLabel="SFC_External_Controller.cls" index="0">
 <position/>
 </item>
-<item historyLabel="SFC_Controller.cls" index="1">
-<position info="not_deleted" x="6100" y="0"/>
-</item>
-<item active="true" historyLabel="SFC_Controller.cls-meta.xml" index="2">
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
+<item historyLabel="SFC_External_Controller.cls" index="0">
+<position/>
+</item>
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SFC_External_Controller.cls" index="0">
+<position/>
+</item>
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SFC_External_Controller.cls" index="0">
+<position/>
+</item>
+<item historyLabel="SFC_External_Controller.cls" index="0">
+<position info="not_deleted" x="638" y="0"/>
+</item>
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SFC_External_Controller.cls" index="0">
+<position/>
+</item>
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SFC_External_Controller.cls" index="0">
+<position/>
+</item>
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SFC_External_Controller.cls" index="0">
+<position/>
+</item>
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SFC_External_Controller.cls" index="0">
+<position/>
+</item>
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SFC_External_Controller.cls" index="0">
+<position/>
+</item>
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SFC_External_Controller.cls" index="0"/>
+<item historyLabel="SfcComponent.component" index="2"/>
+<item historyLabel="SFC_External_Controller.cls" index="0"/>
+<item historyLabel="SFC_Controller.cls" index="3"/>
+<item historyLabel="SFC_External_Controller.cls" index="0">
+<position/>
+</item>
+<item historyLabel="SFC_External_Controller.cls" index="0">
+<position info="not_deleted" x="994" y="0"/>
+</item>
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SFC_External_Controller.cls" index="0">
+<position info="not_deleted" x="1256" y="0"/>
+</item>
+<item historyLabel="SFC_External_Controller.cls-meta.xml" index="1">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item active="true" historyLabel="SFC_External_Controller.cls" index="4"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -342,6 +367,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.salesforce.ide.ui.editors.html" name="SfcComponent.component" tooltip="dev/src/components/SfcComponent.component">
+<persistable path="/dev/src/components/SfcComponent.component"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.salesforce.ide.ui.editors.apex" name="SFC_External_Controller.cls" tooltip="dev/src/classes/SFC_External_Controller.cls">
+<persistable path="/dev/src/classes/SFC_External_Controller.cls"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="RemoteTKController.cls-meta.xml" tooltip="dev/src/classes/RemoteTKController.cls-meta.xml">
 <persistable path="/dev/src/classes/RemoteTKController.cls-meta.xml"/>
 </file>
@@ -350,9 +381,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.salesforce.ide.ui.editors.html" name="ThreeVotComponent.component" tooltip="dev/src/components/ThreeVotComponent.component">
 <persistable path="/dev/src/components/ThreeVotComponent.component"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.salesforce.ide.ui.editors.html" name="SfcComponent.component" tooltip="dev/src/components/SfcComponent.component">
-<persistable path="/dev/src/components/SfcComponent.component"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.salesforce.ide.ui.editors.apex" name="SFC_Controller.cls" tooltip="dev/src/classes/SFC_Controller.cls">
 <persistable path="/dev/src/classes/SFC_Controller.cls"/>

@@ -19,11 +19,18 @@ function ObjectList(){
 
 	this.list = this.el.querySelector(".company-list")
 	this.el.onclick = function(e){
-		if(e.target.classList.contains('item-add') == false){
-			that.onItemClick(e);
-		}
-		else if(e.target.classList.contains('item-add') ){
-			that.onItemAdd(e);
+		var target = e.target;
+		var found=false;
+		while(!found){
+			if(target.classList.contains('item-company') ){
+				that.onItemClick(e);
+				found=true;
+			}
+			else if(target.classList.contains('item-add') ){
+				that.onItemAdd(e);
+				found=true
+			}
+			else target = target.parentNode;
 		}
 	}
 
@@ -53,6 +60,8 @@ ObjectList.prototype.onItemClick = function(e){
 	var target = e.target;
 	if( !target.classList.contains("item-company") ) target = target.parentNode;
 	
+
+
 	var id = target.dataset.id;
 
 	this.emit("SELECT_COMPANY",id)

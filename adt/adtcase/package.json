@@ -1,9 +1,9 @@
 {
 	"name": "adtcase",
 	"description": "",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"threevot": {
-		"version": "4",
+		"version": "5",
 		"screens": {
 			"0-320": "index",
 			"320-900": "index",

@@ -1,6 +1,7 @@
-	  <li class="list-group-item" data-id="<%= @id %>">
-		    <a class=" company-item item-company" data-id="<%= @id %>">
-		    </a>
-		    		    <%= @Name %>
 
-		  </li>
+	  <div class="grid-list-item grid-list-item__light">
+	    <div  class="icon  company-item item-company " data-id="<%= @id %>">
+	    </div>
+	    <span><%= @Name %></span>
+
+	  </div>

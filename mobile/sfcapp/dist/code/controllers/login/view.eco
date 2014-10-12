@@ -1,7 +1,11 @@
-
-
-<div class="login-view padded-container">
+<div class="mobile-body">
 	
+	<div class="login-view">
+	
+	<div class="title">
+		Login to <span class="account_name"></span>
+	</div>
+
 	<input id="txt_username" class="form-control" />
 
 	<input id="txt_password" type="password" class="form-control" />
@@ -12,3 +16,9 @@
 	</div>
 
 </div>
+
+	<div class="powered" ></div>
+
+</div>
+
+

@@ -1,7 +1,7 @@
-	  <div class="col-xs-3 col-md-3 ">
-	    <a class="thumbnail company-item item-company" data-id="<%= @id %>">
-	    	<span><%= @Name %></span>
-	    </a>
+	  <div class="grid-list-item ">
+	    <div  class="icon  company-item item-company " data-id="<%= @id %>">
+	    </div>
+	    <span><%= @Name %></span>
 
 
 	  </div>

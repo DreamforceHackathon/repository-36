@@ -1,0 +1,3 @@
+<li data-id="<%= @id %>" class="list-group-item list-item sf1button " data-id="<%= @id %>">
+	<span class="icon icon-arrow-down"></span> <%= @[@sf1fields_mainField] %> 
+</li>

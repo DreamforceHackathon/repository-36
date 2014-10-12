@@ -11,8 +11,8 @@
 <coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="85" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="com.salesforce.ide.ui.actionset" itemType="typeToolBarContribution" x="75" y="22"/>
-<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="41" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="41" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="103" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="63" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
@@ -87,7 +87,7 @@
 </view>
 <view id="org.eclipse.ui.cheatsheets.views.CheatSheetView" partName="Cheat Sheets"/>
 </views>
-<perspectives activePart="com.salesforce.ide.ui.editors.apex" activePerspective="com.salesforce.ide.perspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="com.salesforce.ide.perspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="com.salesforce.ide.ui.perspective.ForcePerspectiveFactory" id="com.salesforce.ide.perspective" label="Force.com"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -150,7 +150,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="254" ratioRight="762" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.74887216" ratioLeft="498" ratioRight="167" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.83308494" ratioLeft="559" ratioRight="112" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ProblemView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="com.salesforce.ide.ui.view.runTest" label="Apex Test Runner"/>
@@ -186,6 +186,8 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.salesforce.ide.ui.editors.apex" path="/dev/src/classes/ThreeVotApiController.cls"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.salesforce.ide.ui.editors.apex" path="/dev/src/classes/SFC_Admin_Controller.cls"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.salesforce.ide.ui.editors.apex" path="/dev/src/classes/SFC_Admin_Controller.cls-meta.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.salesforce.ide.ui.editors.apex" path="/dev/src/classes/SFC_Admin_Controller.cls"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.salesforce.ide.ui.editors.apex" path="/dev/src/classes/SFC_Admin_Controller.cls-meta.xml"/>
 </editors>
 <item historyLabel="ThreeVotApiController.cls" index="0"/>
 <item historyLabel="SFC_Admin_Controller.cls" index="1">
@@ -209,7 +211,16 @@
 <item historyLabel="SFC_Admin_Controller.cls" index="1">
 <position info="not_deleted" x="148" y="0"/>
 </item>
-<item active="true" historyLabel="SFC_Admin_Controller.cls-meta.xml" index="2">
+<item historyLabel="SFC_Admin_Controller.cls-meta.xml" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SFC_Admin_Controller.cls" index="3">
+<position info="not_deleted" x="27" y="3"/>
+</item>
+<item historyLabel="SFC_Admin_Controller.cls" index="3">
+<position info="not_deleted" x="954" y="0"/>
+</item>
+<item active="true" historyLabel="SFC_Admin_Controller.cls-meta.xml" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>

@@ -2,6 +2,7 @@ var container;
 
 var sfcStore = require("../models/sfcStore");
 
+var Ajax = require("3vot-model/lib/3vot-model-vfr");
 
 function Manager(container_param){
 	var manager = this;
@@ -21,6 +22,7 @@ function Manager(container_param){
 
 	this.companiesController.on("SELECT_COMPANY", function(id){
 		sfcStore.current = sfcStore.find(id);
+
 		manager.companyStoreController.activate();
 		manager.showController( manager.companyStoreController );  
 	});
@@ -34,6 +36,7 @@ function Manager(container_param){
 			found.save();
 			sfcStore.current = found;
 		}
+		manager.loginController.activate()
 		manager.showController( manager.loginController )  
 	});
 
@@ -54,6 +57,10 @@ function Manager(container_param){
 
 	this.searchCompanyController.on("BACK", function(){
 	 	manager.showController( manager.companiesController );
+	});
+
+	this.loginController.on("BACK", function(){
+	 	manager.showController( manager.searchCompanyController );
 	});
 
 	this.companyStoreController.on("BACK", function(){

@@ -1,0 +1,16 @@
+<div class="list-view sliding-view">
+
+	<div class="app-title">
+		<div class="container">
+			<h1>Salesforce1 Fields</h1>
+		</div>
+		<div class="brand text-right">
+			<div class="container">
+				<span class="icon-by3vot"></span>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<ul class="list-group col-md-12 col-sm-12 col-xs-12"></ul>
+	</div>
+</div>

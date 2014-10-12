@@ -47,7 +47,9 @@ ObjectList.prototype.render = function(){
 }
 
 ObjectList.prototype.onItemClick = function(e){
+
 	var id = e.target.dataset.id;
+	
 	this.emit("SELECT_COMPANY",id)
 }
 

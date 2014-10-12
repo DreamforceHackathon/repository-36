@@ -4,7 +4,7 @@ repository-36
 Team 36
 
 ## Introduction
-Salesforce1 for Customers is a Mobile Platform where Salesforce Organizations can build apps in Visualforce and published them in the Platform.
+Salesforce1 for Customers is a Mobile Platform where Salesforce Organizations can build apps in Visualforce and published them in  Mobile.
 
 Customers Download the App and can access Apps from organizations that have given them access, they can Discover Organizations that publish Apps.
 

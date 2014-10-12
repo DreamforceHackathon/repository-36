@@ -1,6 +1,6 @@
 <div class="view company-store">
-	<div class="mobile-header mobile-header__title">
-		<a class="btn-menu">|||</a>	
+	<div class="btn-menu mobile-header mobile-header__title">
+		
 	</div>
 
 	<div class="mobile-menu">

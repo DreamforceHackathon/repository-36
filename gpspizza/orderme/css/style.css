@@ -14,12 +14,13 @@ body{
 
 .label1{
 	background: url("../images/Pizza-top_249px_77px.png");	
-	width: 281px;
-	height: 101px;
+	width: 249px;
+	height: 77px;
 	margin: 0px auto;
-  background-size: 281px 101px;
+  background-size: 249px 77px;
   background-position: 0px 0px;
 	margin-top:49px;	
+  background-repeat: no-repeat;
 }
 
 .button_click{
@@ -30,6 +31,7 @@ body{
   background-size: 168px 168px;
   background-position: 0px 0px;
   	margin-top:49px;
+  background-repeat: no-repeat;
 }
 
 .button_click.clicked{
@@ -40,14 +42,16 @@ body{
   background-size: 168px 168px;
   background-position: 0px 0px;
   	margin-top:49px;
+  background-repeat: no-repeat;
 }
 
 .label2{
 	background: url("../images/Pizza-bottom_191px_74.png");	
-	width: 281px;
-	height: 101px;
+	width: 191px;
+	height: 74px;
 	margin: 0px auto;
-  background-size: 281px 101px;
+  background-size: 191px 74px;
   background-position: 0px 0px;
   margin-top:51px;
+  background-repeat: no-repeat;
 }

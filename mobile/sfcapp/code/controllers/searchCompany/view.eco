@@ -12,40 +12,62 @@
 		<div class=" company-list grid-list " style="padding-left: 14px;"></div>
 		
 		<div class="list-divider"></div>
-			<div class="list-title">Apps for Home</div>
+			<div class="list-title">Shopping</div>
 			<div class="info-label2">See All ></div>		
 
 		<div class=" app-list grid-list " style="padding-left: 14px;">
 	  	<div class="grid-list-item grid-list-item__light">
-	    	<div  class="icon  company-item item-company"></div> <span>3VOT</span> <span class="label_category">Food</span>
+ 	<div style=""  class="icon icon-3vot company-item item-company " data-id="<%= @id %>"></div>
+	    	<span>3VOT</span> <span class="label_category">Food</span>
 	    </div>
 
 			<div class="grid-list-item grid-list-item__light">
-	    	<div  class="icon  company-item item-company"></div> <span>Delta</span> <span class="label_category">Airlines</span>
+ 	<div style=""  class="icon icon-delta company-item item-company " data-id="<%= @id %>"></div>
+	    	<span>Delta</span> <span class="label_category">Airlines</span>
 	    </div>
 
 			<div class="grid-list-item grid-list-item__light">
 				<div class="notification"></div>
-	    	<div  class="icon  company-item item-company"></div> <span>Oracle</span> <span class="label_category">Tech</span>
+ 	<div style=""  class="icon icon-oracle company-item item-company " data-id="<%= @id %>"></div>
+	    	<span>Oracle</span> <span class="label_category">Tech</span>
 	    </div>
 
 			<div class="grid-list-item grid-list-item__light">
-	    	<div  class="icon  company-item item-company"></div> <span>Tesla</span> <span class="label_category">Cars</span>
+ 	<div style=""  class="icon icon-tesla company-item item-company " data-id="<%= @id %>"></div>
+	    	<span>Tesla</span> <span class="label_category">Cars</span>
 	    </div>
 
+</div>
+
+<div class="list-divider"></div>
+
+		<div  class="list-title">Travel</div>
+			<div class="info-label3">See All ></div>		
+
+
+		<div class=" app-list grid-list " style="padding-left: 14px;">
+
+		
 			<div class="grid-list-item grid-list-item__light">
-	    	<div  class="icon  company-item item-company"></div> <span>Motorola</span> <span class="label_category">Telecom</span>
+ 	<div style=""  class="icon icon-motorola company-item item-company " data-id="<%= @id %>"></div>
+	    	<span>Motorola</span> <span class="label_category">Telecom</span>
 	    </div>
 
 			<div class="grid-list-item grid-list-item__light">
 				<div class="notification notification__2"></div>
-	    	<div  class="icon  company-item item-company"></div> <span>Starbucks</span> <span class="label_category">Food</span>
+ 	<div style=""  class="icon icon-starbucks company-item item-company " data-id="<%= @id %>"></div>
+	    	<span>Starbucks</span> <span class="label_category">Food</span>
 	    </div>
 
 			<div class="grid-list-item grid-list-item__light">
-	    	<div  class="icon  company-item item-company"></div> <span>Phillips</span> <span class="label_category">Tech</span>
+ 	<div style=""  class="icon icon-phillips company-item item-company " data-id="<%= @id %>"></div>
+	    	<span>Phillips</span> <span class="label_category">Tech</span>
 	    </div>
 
+			<div class="grid-list-item grid-list-item__light">
+ 	<div style=""  class="icon icon-delta company-item item-company " data-id="<%= @id %>"></div>
+	    	<span>Delta</span> <span class="label_category">Airlines</span>
+	    </div>
 
 		</div>
 

@@ -617,7 +617,8 @@ ObjectList.prototype.renderStore = function(){
 
 	var btnMenu = this.el.querySelector(".btn-menu");
 	btnMenu.onclick = function(e){
-		that.onMenuClick(e);
+		return that.emit("BACK")
+		//that.onMenuClick(e);
 	}
 	
 	this.appList.onclick = function(e){
@@ -776,7 +777,7 @@ module.exports = function(__obj) {
   }
   (function() {
     (function() {
-      __out.push('<div class="view company-store">\n\t<div class="mobile-header mobile-header__title">\n\t\t<a class="btn-menu">|||</a>\t\n\t</div>\n\n\t<div class="mobile-menu">\n\t\t<div class="app-list">\n\n\t\t</div>\n\n\t</div>\n\n\t<div class="mobile-body mobile-body__withsmallheader">\n\t\t  \t\t<iframe class="embed-responsive-item vf-iframe" src=""></iframe>\n\n\t</div>\n\n</div>\n\n\n');
+      __out.push('<div class="view company-store">\n\t<div class="btn-menu mobile-header mobile-header__title">\n\t\t\n\t</div>\n\n\t<div class="mobile-menu">\n\t\t<div class="app-list">\n\n\t\t</div>\n\n\t</div>\n\n\t<div class="mobile-body mobile-body__withsmallheader">\n\t\t  \t\t<iframe class="embed-responsive-item vf-iframe" src=""></iframe>\n\n\t</div>\n\n</div>\n\n\n');
     
     }).call(this);
     
@@ -1070,7 +1071,39 @@ module.exports = function(__obj) {
   }
   (function() {
     (function() {
-      __out.push('<div class="view">\n\t<div class="mobile-header mobile-header__colored">\n\t\t<a class="btn-back"></a>\n\t\t<div class="search"></div>\n\t\t<input class=" " />\n\t</div>\n\n\t<div class="mobile-body__withheader">\n\t\t<div class="list-title">Best Apps</div>\t\t\n\t\t<div class="info-label">See All ></div>\t\t\n\n\t\t<div class=" company-list grid-list " style="padding-left: 14px;"></div>\n\t\t\n\t\t<div class="list-divider"></div>\n\t\t\t<div class="list-title">Apps for Home</div>\n\t\t\t<div class="info-label2">See All ></div>\t\t\n\n\t\t<div class=" app-list grid-list " style="padding-left: 14px;">\n\t  \t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>3VOT</span> <span class="label_category">Food</span>\n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Delta</span> <span class="label_category">Airlines</span>\n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t\t\t\t<div class="notification"></div>\n\t    \t<div  class="icon  company-item item-company"></div> <span>Oracle</span> <span class="label_category">Tech</span>\n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Tesla</span> <span class="label_category">Cars</span>\n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Motorola</span> <span class="label_category">Telecom</span>\n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t\t\t\t<div class="notification notification__2"></div>\n\t    \t<div  class="icon  company-item item-company"></div> <span>Starbucks</span> <span class="label_category">Food</span>\n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t    \t<div  class="icon  company-item item-company"></div> <span>Phillips</span> <span class="label_category">Tech</span>\n\t    </div>\n\n\n\t\t</div>\n\n\n\t</div>\n</div>');
+      __out.push('<div class="view">\n\t<div class="mobile-header mobile-header__colored">\n\t\t<a class="btn-back"></a>\n\t\t<div class="search"></div>\n\t\t<input class=" " />\n\t</div>\n\n\t<div class="mobile-body__withheader">\n\t\t<div class="list-title">Best Apps</div>\t\t\n\t\t<div class="info-label">See All ></div>\t\t\n\n\t\t<div class=" company-list grid-list " style="padding-left: 14px;"></div>\n\t\t\n\t\t<div class="list-divider"></div>\n\t\t\t<div class="list-title">Shopping</div>\n\t\t\t<div class="info-label2">See All ></div>\t\t\n\n\t\t<div class=" app-list grid-list " style="padding-left: 14px;">\n\t  \t<div class="grid-list-item grid-list-item__light">\n \t<div style=""  class="icon icon-3vot company-item item-company " data-id="');
+    
+      __out.push(__sanitize(this.id));
+    
+      __out.push('"></div>\n\t    \t<span>3VOT</span> <span class="label_category">Food</span>\n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n \t<div style=""  class="icon icon-delta company-item item-company " data-id="');
+    
+      __out.push(__sanitize(this.id));
+    
+      __out.push('"></div>\n\t    \t<span>Delta</span> <span class="label_category">Airlines</span>\n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t\t\t\t<div class="notification"></div>\n \t<div style=""  class="icon icon-oracle company-item item-company " data-id="');
+    
+      __out.push(__sanitize(this.id));
+    
+      __out.push('"></div>\n\t    \t<span>Oracle</span> <span class="label_category">Tech</span>\n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n \t<div style=""  class="icon icon-tesla company-item item-company " data-id="');
+    
+      __out.push(__sanitize(this.id));
+    
+      __out.push('"></div>\n\t    \t<span>Tesla</span> <span class="label_category">Cars</span>\n\t    </div>\n\n</div>\n\n<div class="list-divider"></div>\n\n\t\t<div  class="list-title">Travel</div>\n\t\t\t<div class="info-label3">See All ></div>\t\t\n\n\n\t\t<div class=" app-list grid-list " style="padding-left: 14px;">\n\n\t\t\n\t\t\t<div class="grid-list-item grid-list-item__light">\n \t<div style=""  class="icon icon-motorola company-item item-company " data-id="');
+    
+      __out.push(__sanitize(this.id));
+    
+      __out.push('"></div>\n\t    \t<span>Motorola</span> <span class="label_category">Telecom</span>\n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n\t\t\t\t<div class="notification notification__2"></div>\n \t<div style=""  class="icon icon-starbucks company-item item-company " data-id="');
+    
+      __out.push(__sanitize(this.id));
+    
+      __out.push('"></div>\n\t    \t<span>Starbucks</span> <span class="label_category">Food</span>\n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n \t<div style=""  class="icon icon-phillips company-item item-company " data-id="');
+    
+      __out.push(__sanitize(this.id));
+    
+      __out.push('"></div>\n\t    \t<span>Phillips</span> <span class="label_category">Tech</span>\n\t    </div>\n\n\t\t\t<div class="grid-list-item grid-list-item__light">\n \t<div style=""  class="icon icon-delta company-item item-company " data-id="');
+    
+      __out.push(__sanitize(this.id));
+    
+      __out.push('"></div>\n\t    \t<span>Delta</span> <span class="label_category">Airlines</span>\n\t    </div>\n\n\t\t</div>\n\n\n\t</div>\n</div>');
     
     }).call(this);
     

@@ -1,9 +1,9 @@
 {
 	"name": "orderme",
 	"description": "",
-	"version": "0.0.2",
+	"version": "0.0.4",
 	"threevot": {
-		"version": "2",
+		"version": "4",
 		"screens": {
 			"0-320": "index",
 			"320-900": "index",

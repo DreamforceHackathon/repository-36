@@ -1,5 +1,0 @@
-<li class="product-item" data-id="<%= @id %>">
-	
-	<%= @Name %>
-
-</li>

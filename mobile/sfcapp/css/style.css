@@ -4,7 +4,7 @@
 body,html{
 	background-color: #1f92d8;
 	margin: 0px;
-	height: 96%;
+	height: 98%;
 }
 
 ._3vot{
@@ -72,9 +72,10 @@ background-repeat: no-repeat;
 
 .grid-list-item span.label_category{
 	position: relative;
-	top: -10px;	
+	top: -8px;	
 	font-size: 12px;
 	font-weight: 300;
+	color: rgb(186,222,243);
 }
 
 .grid-list-item__light span{
@@ -125,21 +126,28 @@ background-repeat: no-repeat;
 	position: absolute;
 	top: 103px;
 	right: 22px;
-	color: #fff;
+color: rgb(186,222,243);
 }
 
 .info-label2{
 	font-size: 11px;
 	position: absolute;
-	top: 373px;
+	top: 277px;
 	right: 22px;
-	color: #fff;
+color: rgb(186,222,243);
 }
 
+.info-label3{
+	font-size: 11px;
+	position: absolute;
+	top: 445px;
+	right: 22px;
+color: rgb(186,222,243);
+}
 
 .list-divider{
 	height: 1px;
-	border-top: #fff 1px solid;
+	border-top: rgb(186,222,243) 1px solid;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -157,37 +165,26 @@ background-repeat: no-repeat;
 
 .mobile-header__title{
 	padding: 0px;
-	margin-top: 16px;
+	margin-top: 18px;
 	background-color: #1f92d8;
-	height: 15px;
+	height: 19px;
 	background-image: url(../images/logo-bar.png) !important;
 	background-size: 65px 12px;
-	background-position: center 5px;
+	background-position: center 7px;
 	background-repeat: no-repeat;
 	position: relative;
 }
 
-.mobile-header__title .btn-menu{
-	position: absolute;
-	left: 10px;
-	top: 2px;
-	width: 20px;
-	height: 20px;
-	padding: 10px;
-	background-color: rgba(255,255,255,.8);
-	border: 1px solid #ddd;
-	z-index: 8888;
-}
 
 
 .mobile-header .btn-back{
 position: absolute;
 top: 36px;
-left: 10px;
+left: 8px;
 background-image: url(../images/back_arrow.png);
-background-size: 26px 34px;
+background-size: 20px 30px;
 background-repeat: no-repeat;
-background-position: 0px -2px;
+background-position: 0px 1px;
 width: 33px;
 height: 34px;
 }
@@ -195,29 +192,27 @@ height: 34px;
 .mobile-header .search{
 position: absolute;
 background-image: url(../images/search.png);
-background-size: 26px 31px;
+background-size: 23px 24px;
 background-repeat: no-repeat;
-width: 23px;
-height: 23px;
-top: 39px;
-left: 50px;
+width: 27px;
+height: 20px;
+top: 42px;
+left: 38px;
 }
 
 .mobile-header input{
-	display: inline-block;
-	padding-top: 7px;
-	padding-bottom: 7px;
-	padding-left: 22px;
-	padding-right: 7px;
-
-	color: #fff;
-	border: none;
-	outline: none;
-	width: 250px;
-	margin-left: 35px;
-	background-color: #1f92d8;
-	border-radius: 8px;
-
+display: inline-block;
+padding-top: 6px;
+padding-bottom: 8px;
+padding-left: 22px;
+padding-right: 7px;
+color: #fff;
+border: none;
+outline: none;
+width: 277px;
+margin-left: 23px;
+background-color: #1f92d8;
+border-radius: 8px;
 }
 
 
@@ -232,7 +227,7 @@ left: 50px;
 }
 
 .mobile-body__withsmallheader{
-	margin-top: 4px;
+	margin-top: 6px;
 
 }
 
@@ -295,13 +290,98 @@ left: 50px;
 .powered{
 	position: fixed;
 	bottom: 10px;
-	left: 80px;
-	width: 50%;
+	left: 70px;
+	width: 65%;
 	height: 34px;
 	background-image: url(../images/powered.png);
-	background-size: 150px 30px;
+	background-size: 180px 35px;
 	background-repeat: no-repeat;
 	border: none;
 	outline: none;
 }
 
+
+.icon-3vot{	
+	height: 60px;
+	width: 100%;
+	margin-right: 15px;
+	border-radius: 10px;
+	display: inline-block !important;
+	background-color: #fff;
+	border: #eee;
+	background-size: cover;
+	background-image: url("../images/3vot.png");
+}
+.icon-delta{
+	height: 60px;
+	width: 100%;
+	margin-right: 15px;
+	border-radius: 10px;
+	display: inline-block !important;
+	background-color: #fff;
+	border: #eee;
+	background-size: cover;
+	background-image: url("../images/Delta.png");
+
+}
+.icon-oracle{
+	height: 60px;
+	width: 100%;
+	margin-right: 15px;
+	border-radius: 10px;
+	display: inline-block !important;
+	background-color: #fff;
+	border: #eee;
+	background-size: cover;
+	background-image: url("../images/Oracle.png");
+
+}
+.icon-tesla{
+	height: 60px;
+	width: 100%;
+	margin-right: 15px;
+	border-radius: 10px;
+	display: inline-block !important;
+	background-color: #fff;
+	border: #eee;
+	background-size: cover;
+	background-image: url("../images/Tesla.png");
+
+}
+.icon-motorola{
+	height: 60px;
+	width: 100%;
+	margin-right: 15px;
+	border-radius: 10px;
+	display: inline-block !important;
+	background-color: #fff;
+	border: #eee;
+	background-size: cover;
+	background-image: url("../images/Motorola.png");
+
+}
+.icon-starbucks{
+	height: 60px;
+	width: 100%;
+	margin-right: 15px;
+	border-radius: 10px;
+	display: inline-block !important;
+	background-color: #fff;
+	border: #eee;
+	background-size: cover;
+	background-image: url("../images/Starbucks.png");
+
+}
+.icon-phillips{
+	height: 60px;
+	width: 100%;
+	margin-right: 15px;
+	border-radius: 10px;
+	display: inline-block !important;
+	background-color: #fff;
+	border: #eee;
+	background-size: cover;
+	background-image: url("../images/Philips.png");
+
+}
+ 	

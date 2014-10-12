@@ -1,9 +1,9 @@
 {
 	"name": "sfcapp",
 	"description": "",
-	"version": "0.0.41",
+	"version": "0.0.45",
 	"threevot": {
-		"version": "41",
+		"version": "45",
 		"screens": {
 			"0-320": "index",
 			"320-900": "index",

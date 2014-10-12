@@ -27,7 +27,8 @@ ObjectList.prototype.renderStore = function(){
 
 	var btnMenu = this.el.querySelector(".btn-menu");
 	btnMenu.onclick = function(e){
-		that.onMenuClick(e);
+		return that.emit("BACK")
+		//that.onMenuClick(e);
 	}
 	
 	this.appList.onclick = function(e){

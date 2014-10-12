@@ -1,0 +1,25 @@
+<div class="detail-view">
+	
+	<% for key in @model.fieldNames: %>
+		<% if key != @item.sf1fields_mainField: %>
+		<div class="detail-view-item row">
+	
+					<span class="detail-view-item__title col-xs-4"><%= key %></span>
+			
+					<% if key.slice(-2) == "Id" && @item[key] && @item[key].length == 18 : %>
+						<span class="detail-view-item__link col-xs-8">
+							 <span class=" btn-view-id" data-id=<%= @item[key] %>>: View <%= key.slice(0,-2) %> in SF1 </span>
+						</span>
+				
+					<% else: %>
+						<span class="detail-view-item__value col-xs-8">: <%= @item[key] %></span>
+					<% end %>
+			</div>
+		<% end %>
+	<% end %>
+
+	<div class="detail-view-buttons">
+		<a class="btn btn-primary btn-sm btn-view-id" data-id=<%= @item["id"] %>> View in SF1 </a>
+	</div>
+
+</div>

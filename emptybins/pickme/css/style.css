@@ -1,0 +1,75 @@
+/*Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+body,html{
+	height: 100%;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	background: url("../images/EmptyBin_logo_237_148.png");
+  background-repeat: no-repeat;
+  background-color: #303d1a;
+  background-size: 237px 148px;
+  background-position:  center 32px;
+}
+
+.button_click_recycle{
+	background: url("../images/EmptyBin_Recycle1.png");	
+	width: 186px;
+	height: 61px;
+	margin: 0px auto;
+  background-size: 186px 61px;
+  background-position: 0px 0px;
+	margin-top:50px;
+}
+
+.button_click_recycle.click{
+	background: url("../images/EmptyBin_Recycle2.png");	
+}
+
+.button_click_compost{
+	background: url("../images/EmptyBin_Compost1.png");	
+	width: 186px;
+	height: 61px;
+	margin: 0px auto;
+  background-size: 186px 61px;
+  background-position: 0px 0px;
+  margin-top:20px;
+}
+
+.button_click_compost.click{
+	background: url("../images/EmptyBin_Recycle2.png");	
+}
+
+.button_click_landfill{
+	background: url("../images/EmptyBin_Landfill1.png");	
+	width: 186px;
+	height: 61px;
+	margin: 0px auto;
+  background-size: 186px 61px;
+  background-position: 0px 0px;
+  margin-top:20px;
+}
+
+.button_click_landfill.click{
+	background: url("../images/EmptyBin_Landfill2.png");	
+
+}
+
+
+
+.placeholder{
+	padding-top: 170px;
+}
+
+
+
+
+::-webkit-input-placeholder {
+   color: #4a77a0;
+   font-size: 30px;
+}
+

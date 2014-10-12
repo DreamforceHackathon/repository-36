@@ -1,6 +1,5 @@
 	  <div class="grid-list-item ">
-	    <div  class="icon  company-item item-company " data-id="<%= @id %>">
-	    </div>
+	   <div style="background-image: url('<%= @Logo %>')"  class="icon  company-item item-company " data-id="<%= @id %>"></div>
 	    <span><%= @Name %></span>
 
 

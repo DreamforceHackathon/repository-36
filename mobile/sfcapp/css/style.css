@@ -1,18 +1,30 @@
 /*Fonts*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:200,400,300,600);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,300,600);
 
 body,html{
-	height: 100%;
 	background-color: #1f92d8;
-
+	margin: 0px;
+	height: 96%;
 }
 
 ._3vot{
 	background-color: #1f92d8;
-	height: 100%;
 }
 
+.splash_logo{
+background-image: url(../images/AppApp_splash.png);
+position: absolute;
+right: -5px;
+top: -5px;
+width: 320px;
+height: 100%;
+background-size: 320px 584px;
+background-repeat: no-repeat;
+}
 
+.list-divider{
+	margin: 0px 13px;
+}
 
 .grid-list{
 	padding: 0px 10px;
@@ -41,24 +53,33 @@ body,html{
 	display: inline-block !important;
 	background-color: #fff;
 	border: #eee;
+	background-size: cover;
 }
+
 
 .grid-list-item span{
 	line-height: 18px;
 	padding-top: 5px;
 	text-align: center;
 	display: block;
-	height: 45px;
 	vertical-align: middle;
 	margin-bottom: 0px;
 	width: 100%;
 	color: #fff;
 	font-size: 12pt;
+	text-transform: capitalize;
+}
+
+.grid-list-item span.label_category{
+	position: relative;
+	top: -10px;	
+	font-size: 12px;
+	font-weight: 300;
 }
 
 .grid-list-item__light span{
-	font-size: 12px;
-	font-weight: 200;
+	font-size: 14px;
+	font-weight: 400;
 }
 
 .grid-list-item .notification{
@@ -90,13 +111,31 @@ body,html{
 }
 
 .list-title{
-	font-weight: 200;
+	font-weight: 300;
 	font-family: "Open Sans","Arial";
-	font-size: 15px;
-	line-height: 30px;
+	font-size: 23px;
+	line-height: 35px;
 	color: #fff;
-	margin-left: 10px;
+	margin-left: 15px;
+	margin-bottom: 5px;
 }
+
+.info-label{
+	font-size: 11px;
+	position: absolute;
+	top: 103px;
+	right: 22px;
+	color: #fff;
+}
+
+.info-label2{
+	font-size: 11px;
+	position: absolute;
+	top: 373px;
+	right: 22px;
+	color: #fff;
+}
+
 
 .list-divider{
 	height: 1px;
@@ -111,54 +150,71 @@ body,html{
 }
 
 .mobile-header__colored{
-	background-color: #fefefd;
+	background-color: rgb(248,248,248);
 	padding: 10px 10px 10px 10px;
+	height: 55px;
 }
 
 .mobile-header__title{
 	padding: 0px;
-	margin-top: 14px;
+	margin-top: 16px;
 	background-color: #1f92d8;
-	height: 18px;
-	background-image: url(../images/upload.png) !important;
-	background-size: 100px 20px;
-	background-position: center;
+	height: 15px;
+	background-image: url(../images/logo-bar.png) !important;
+	background-size: 65px 12px;
+	background-position: center 5px;
 	background-repeat: no-repeat;
 	position: relative;
 }
 
 .mobile-header__title .btn-menu{
 	position: absolute;
-	left: 0px;
-	top: 0px;
+	left: 10px;
+	top: 2px;
 	width: 20px;
 	height: 20px;
 	padding: 10px;
-	background-color: #fff;
+	background-color: rgba(255,255,255,.8);
 	border: 1px solid #ddd;
+	z-index: 8888;
 }
 
 
 .mobile-header .btn-back{
-	display: inline-block;	
-	background-color: transparent;;
-	line-height: 12px;
-	font-size: 35px;
-	font-weight: 700;
-	vertical-align: text-top;
+position: absolute;
+top: 36px;
+left: 10px;
+background-image: url(../images/back_arrow.png);
+background-size: 26px 34px;
+background-repeat: no-repeat;
+background-position: 0px -2px;
+width: 33px;
+height: 34px;
+}
+
+.mobile-header .search{
+position: absolute;
+background-image: url(../images/search.png);
+background-size: 26px 31px;
+background-repeat: no-repeat;
+width: 23px;
+height: 23px;
+top: 39px;
+left: 50px;
 }
 
 .mobile-header input{
 	display: inline-block;
 	padding-top: 7px;
 	padding-bottom: 7px;
-	padding-left: 7px;
+	padding-left: 22px;
 	padding-right: 7px;
+
 	color: #fff;
 	border: none;
 	outline: none;
-	width: 270px;
-	margin-left: 5px;
+	width: 250px;
+	margin-left: 35px;
 	background-color: #1f92d8;
 	border-radius: 8px;
 
@@ -167,19 +223,16 @@ body,html{
 
 
 .mobile-body{
-	min-height: 435px;
-	margin-top: 25px;
+	margin-top: 30px;
 }
 
 
 .mobile-body__withheader{
-	min-height: 333px;
 	margin-top: 15px;
 }
 
 .mobile-body__withsmallheader{
-	height: 333px;
-	margin-top: 10px;
+	margin-top: 4px;
 
 }
 
@@ -190,7 +243,7 @@ body,html{
 
 .login-view .title{
 	color: #fff;
-	font-weight: 200;
+	font-weight: 300;
 	font-family: "Open Sans", "Arial";
 	font-size: 35px;
 	margin-bottom: 15px;
@@ -216,12 +269,11 @@ body,html{
 	position: absolute;
 	left: 0px;
 	width: 100px;
-	top: 40px;
+	top: 35px;
 	bottom: 0px;
-	background-color: black;
-	border-right: 2px solid #333;
-	-webkit-transition: left 1s; /* For Safari 3.1 to 6.0 */
-  transition: left 1s;
+	background-color: #1f92d8;
+	-webkit-transition: left 0.4s; /* For Safari 3.1 to 6.0 */
+  transition: left 0.4s;
   z-index: 1;
   padding: 5px;
   padding-top: 15px;
@@ -229,6 +281,14 @@ body,html{
 
 
 .mobile-menu .app-item{
+	padding: 14px 4px;
+	border-bottom: 1px solid #ddd;
+	display: block;
+	width: 100%;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 400;
+	text-transform: capitalize;
 
 }
 
@@ -244,8 +304,4 @@ body,html{
 	border: none;
 	outline: none;
 }
-
-
-
-
 

@@ -54,8 +54,8 @@ ObjectList.prototype.activate = function(){
 ObjectList.prototype.adjustIFrame = function(){
 	var that = this;
 	setTimeout(function(){
-		that.frame.style.height = that.body.offsetHeight + "px"
-		that.frame.style.width = that.body.offsetWidth + "px"
+		that.frame.style.height = document.querySelector("body").offsetHeight + "px"
+		that.frame.style.width = document.querySelector("body").offsetWidth + "px"
 	},100)
 
 }

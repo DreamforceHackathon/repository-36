@@ -1,0 +1,5 @@
+
+<div class="placeholder">
+<input class="date" placeholder="mm/dd/yyyy"/>
+
+<div class="button_click"></div>

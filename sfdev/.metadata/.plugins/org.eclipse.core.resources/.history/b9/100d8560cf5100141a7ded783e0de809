@@ -1,0 +1,46 @@
+@RestResource(urlMapping='/sfc/*')
+global with sharing class SFC_External_Controller {
+
+  @HttpGet
+  global static String loginCustomer() {
+  	
+  	
+    RestRequest req = RestContext.request;
+  	
+ 	return loginCustomerHelper(req.params);
+        
+   }
+   
+   global static string loginCustomerHelper( Map<String,String> queryReference){
+   	   
+   	Map<string,Object> parsed = (Map<String,Object>)JSON.deserializeuntyped(queryReference.get('credentials'));
+    //return '{"ok":true}';
+   	
+    Account result = [SELECT Id, sfc_token__c,sfc_apps__c FROM Account WHERE sfc_username__c = :(string)parsed.get('username') and sfc_password__c = :(string)parsed.get('password') ];
+    
+    
+    return JSON.serialize(result);
+   }
+
+ 	@RemoteAction
+ 	global static boolean resetTokens(){
+ 		List<Account> accounts = [select id,sfc_token__C from account];
+ 		for(account account: accounts){
+ 			account.sfc_token__c = String.valueOf( Integer.valueOf(Math.random() * 1000000) );
+ 		}
+ 		update accounts;
+ 		return true;
+ 	}
+ 	
+ 	
+ 	@RemoteAction
+ 	global static boolean appConfig(string appConfig){
+ 		List<Account> accounts = [select id,sfc_apps__c from account];
+ 		for(account account: accounts){
+ 			account.sfc_apps__c = appConfig;
+ 		}
+ 		update accounts;
+ 		return true;
+ 	}
+
+}

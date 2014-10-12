@@ -1,0 +1,5 @@
+<li  class="list-group-item  list-item__single" data-id="<%= @id %>">
+	<div data-id="<%= @id %>" class="list-item list-group-item-title">
+		<%= @[@sf1fields_mainField] %>
+	</div>
+</li>

@@ -1,2 +1,2 @@
-<a class="thumbnail app-item" data-app="<%= @ %>"><%= @ %></a>
+<a class=" app-item" data-app="<%= @ %>"><%= @ %></a>
 		 

@@ -44,26 +44,23 @@ ObjectList.prototype.loginToApi = function(e){
 	
 	var url = 'https://jsonp.nodejitsu.com/?url='+ sfcStore.current.Apiurl +'/services/apexrest/sfc?credentials={"username": "user","password":"pass"}';
 	var that = this;
-  superagent.get(url).end(function(res){
-    if(res.ok){
-    	var parsed = JSON.parse(res.body);
+  superagent.get(url)
+  .end(function(err,res){
+    
+    if(res && res.ok){
+  		var parsed = JSON.parse(res.body);
+    	
     	that.emit("LOGIN_COMPLETE", parsed);
     }
-    else{
-			that.emit("BACK");
-    }
-  }).on('error', function(){ that.emit("BACK"); })
+    //else{
+			//that.emit("BACK");
+    //}
+  })
+  //.on('error', function(err){ console.log(err); that.emit("BACK"); })
 
 }
 
 
-ObjectList.prototype.onSend = function(e){
-	//LOGIN WITH ACTUAL ORG
-
-
-	//IF SUCCESS
-	this.emit("LOGIN_COMPLETE");
-}
 
 ObjectList.prototype.onCancel = function(e){
 	this.emit("BACK");

@@ -1,9 +1,7 @@
 //COMPANY IS IN SFC CONTROL CENTER
-
 var _3Model = require("3vot-model")
 
-Company = _3Model.setup("Company", ["name","apiurl__c","logo"]);
-
+Company = _3Model.setup("Company", ["name","apiurl__c","Logo__c"]);
 
 Company.fetch = function(objectName){
 

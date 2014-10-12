@@ -1,47 +1,49 @@
 <div class="view">
 	<div class="mobile-header mobile-header__colored">
-		<a class="btn-back"> < </a>
-			<input class=" " />
-
+		<a class="btn-back"></a>
+		<div class="search"></div>
+		<input class=" " />
 	</div>
 
 	<div class="mobile-body__withheader">
-		<div class="list-title">Available Apps</div>		
+		<div class="list-title">Best Apps</div>		
+		<div class="info-label">See All ></div>		
 
 		<div class=" company-list grid-list " style="padding-left: 14px;"></div>
 		
 		<div class="list-divider"></div>
-			<div class="list-title">Upcoming Releases</div>
+			<div class="list-title">Apps for Home</div>
+			<div class="info-label2">See All ></div>		
 
 		<div class=" app-list grid-list " style="padding-left: 14px;">
 	  	<div class="grid-list-item grid-list-item__light">
-	    	<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> 
+	    	<div  class="icon  company-item item-company"></div> <span>3VOT</span> <span class="label_category">Food</span>
 	    </div>
 
 			<div class="grid-list-item grid-list-item__light">
-	    	<div  class="icon  company-item item-company"></div> <span>Delta</span> 
+	    	<div  class="icon  company-item item-company"></div> <span>Delta</span> <span class="label_category">Airlines</span>
 	    </div>
 
 			<div class="grid-list-item grid-list-item__light">
 				<div class="notification"></div>
-	    	<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> 
+	    	<div  class="icon  company-item item-company"></div> <span>Oracle</span> <span class="label_category">Tech</span>
 	    </div>
 
 			<div class="grid-list-item grid-list-item__light">
-	    	<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> 
+	    	<div  class="icon  company-item item-company"></div> <span>Tesla</span> <span class="label_category">Cars</span>
 	    </div>
 
 			<div class="grid-list-item grid-list-item__light">
-	    	<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> 
+	    	<div  class="icon  company-item item-company"></div> <span>Motorola</span> <span class="label_category">Telecom</span>
 	    </div>
 
 			<div class="grid-list-item grid-list-item__light">
 				<div class="notification notification__2"></div>
-	    	<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> 
+	    	<div  class="icon  company-item item-company"></div> <span>Starbucks</span> <span class="label_category">Food</span>
 	    </div>
 
 			<div class="grid-list-item grid-list-item__light">
-	    	<div  class="icon  company-item item-company"></div> <span>Coca Cola</span> 
+	    	<div  class="icon  company-item item-company"></div> <span>Phillips</span> <span class="label_category">Tech</span>
 	    </div>
 
 

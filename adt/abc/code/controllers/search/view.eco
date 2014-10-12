@@ -1,0 +1,7 @@
+<div class="search-component ">
+
+	<a class="btn btn-primary back-btn js_back_btn">Back</a>
+		
+		<input class="search-input"/>
+
+</div>

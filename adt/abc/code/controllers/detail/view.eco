@@ -1,0 +1,18 @@
+<div class="sliding-view">
+
+<h1>Details</h1>
+
+<ul class="list-group">
+
+<% for key in @model.fieldNames: %>
+
+	<li class="list-group-item field list-group-item">
+		<div class="title"><%= key %></div>
+		<div class="value"><%= @object[key] %></div>
+	</li>
+
+<% end %>
+
+</ul>
+
+</div>

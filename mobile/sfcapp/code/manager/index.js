@@ -8,6 +8,7 @@ function Manager(container_param){
 	var manager = this;
 	this.container= container_param;
 
+	var SplashController = require("../controllers/splash");
 	var CompaniesController = require("../controllers/companies");
 	var SearchCompanyController = require("../controllers/searchCompany");
 	var CompanyStoreController = require("../controllers/companyStore");
@@ -17,6 +18,7 @@ function Manager(container_param){
 	this.searchCompanyController = new SearchCompanyController();
 	this.companyStoreController = new CompanyStoreController();
 	this.loginController = new LoginController();
+	this.splashController = new SplashController();
 
 	this.companiesController.on("ADD_COMPANY", function(){ manager.showController( manager.searchCompanyController )  });
 
@@ -30,7 +32,7 @@ function Manager(container_param){
 	this.searchCompanyController.on("SELECT_COMPANY", function(id){ 
 		var company = Company.find(id);
 		var found = sfcStore.findByAttribute("Name", company.Name)
-		if( found == null ) sfcStore.current = sfcStore.create({ Name: company.Name, Apiurl: company.apiurl__c });
+		if( found == null ) sfcStore.current = sfcStore.create({ Name: company.Name, Apiurl: company.apiurl__c, Logo: company.Logo__c });
 		else{
 			found.Apiurl = company.apiurl__c;
 			found.save();
@@ -45,13 +47,15 @@ function Manager(container_param){
 		response.sfc_apps__c = response.sfc_apps__c || '{apps:[]}'
 		if(response.sfc_apps__c=='') response.sfc_apps__c = '{apps:[]}';
 		
-		
+		try{
 		sfcStore.current.Apps = JSON.parse( response.sfc_apps__c ).apps;
-		sfcStore.current.Logo = response.Logo;
+		}catch(e){sfcStore.current.Apps = [];}
 		
 		sfcStore.current.save()
+		
 		manager.showController(manager.companiesController);
 		manager.companiesController.render();
+		
 		sfcStore.current=null;
 	})
 
@@ -60,6 +64,7 @@ function Manager(container_param){
 	});
 
 	this.loginController.on("BACK", function(){
+		console.log("back")
 	 	manager.showController( manager.searchCompanyController );
 	});
 
@@ -68,7 +73,8 @@ function Manager(container_param){
 	 	manager.showController( manager.companiesController );
 	});
 
-	this.showController(this.companiesController);
+	this.initialAnimation();
+
 }
 
 Manager.prototype.showController = function(controller){
@@ -78,5 +84,17 @@ Manager.prototype.showController = function(controller){
 	this.container.appendChild( controller.el );
 	this.currentContainer = controller;
 }
+
+Manager.prototype.initialAnimation  = function(){
+	var manager = this;
+
+	this.showController(this.splashController);
+	setTimeout(function(){
+		manager.showController(manager.companiesController);
+	},1100)
+
+
+}
+
 
 module.exports = Manager;

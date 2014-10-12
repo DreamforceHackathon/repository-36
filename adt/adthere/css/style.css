@@ -1,0 +1,65 @@
+/*Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+body,html{
+	height: 100%;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 300;
+	background: url("../images/ADT_top_263_224.png");
+  background-repeat: no-repeat;
+  background-color: #0f5dad;
+  background-size: 263px 224px;
+  background-position:  center 54px;
+}
+
+.button_click{
+	background: url("../images/ADT_secure_188x63.png");	
+	width: 188px;
+	height: 63px;
+	margin: 64px auto;
+  background-size: 188px 63px;
+  background-position: 0px 0px;
+
+}
+
+.button_click.clicked{
+	background: url("../images/ADT_secure3_188x63.png");	
+  background-repeat: no-repeat;
+  background-size: 188px 63px;
+  background-position: 0px 0px;
+}
+
+.placeholder{
+	padding-top: 297px;
+}
+
+input.date{
+	background-color: transparent;;
+	border: none;
+	outline: none;
+	border-bottom: 3px solid #fff;
+	border-radius: 0px;
+	width: 70%;
+	margin-right: auto !important;
+	margin-left: auto !important;
+	color: #fff;
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  font-family: "Open Sans"
+
+}
+
+.button_click{
+	margin-top: 64px;
+}
+
+::-webkit-input-placeholder {
+   color: #4a77a0;
+   font-size: 30px;
+}
+

@@ -1,7 +1,7 @@
 var _3Model = require("3vot-model")
 var Ajax = require("3vot-model/lib/3vot-model-vfr");
 
-Account = _3Model.setup("Account", ["id","name"]);
+Account = _3Model.setup("Account", ["Name"]);
 Account.ajax = Ajax;
 
 module.exports= Account

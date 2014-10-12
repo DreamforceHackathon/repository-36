@@ -1,0 +1,30 @@
+<div class="list-view sliding-view">
+	<div class="header">
+		<div class="container">
+			<a class="btn-back sf1button SFBlue col-md-2 col-sm-2 col-xs-2"><span class="icon icon-back"></span></a>
+		<div class="form-wrapper col-sm-10 col-md-10 col-xs-10"><input class="form-control " type="text" placeholder="Search for..."/>
+		</div>
+		</div>
+	</div>
+	<div class="container">
+		<!-- <a class="btn-options sf1button">|||</a> -->
+	
+		<div class="clearfix"></div>
+	
+		<div class="list">
+			<label> <span class="icon icon-sort"></span> Lists</label>
+			<ul class="list-group list-views col-md-12 col-sm-12 col-xs-12"></ul>
+			<div class="clearfix"></div>
+		</div>
+	
+			
+		<div class="list ">
+			<label class="label"></label>
+			<ul class="list-group list-items"></ul>
+		</div>
+	
+		<div class="footer">
+			<div class="logo"></div>
+		</div>
+	</div><!--container-->
+</div>

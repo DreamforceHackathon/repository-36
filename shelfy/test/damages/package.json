@@ -1,0 +1,39 @@
+{
+	"name": "damages",
+	"description": "",
+	"version": "0.0.7",
+	"threevot": {
+		"version": "7",
+		"screens": {
+			"0-320": "index",
+			"320-900": "index",
+			"900-1200": "index",
+			"1200-5000": "index"
+		},
+		"extensions": [
+			".eco"
+		],
+		"transforms": [
+			"browserify-eco"
+		],
+		"external": {},
+		"gitDependencies": {},
+		"paths": {
+			"sourceBucket": "source.3vot.com",
+			"productionBucket": "3vot.com"
+		},
+		"uploadSource": true,
+		"distFolder": "dist",
+		"uploadApp": false,
+		"build": true,
+		"pathsToExclude": [
+			"node_modules",
+			"sf"
+		]
+	},
+	"dependencies": {
+		"3vot-model": "~0.2.5",
+		"browserify-eco": "~0.2.4",
+		"domify": "~1.3.1"
+	}
+}

@@ -1,0 +1,9 @@
+public with sharing class Test_SFC_External {
+
+	
+
+	SFC_External_Controller.resetTokens();
+
+
+
+}

@@ -1,9 +1,9 @@
 {
 	"name": "sfcapp",
 	"description": "",
-	"version": "0.0.23",
+	"version": "0.0.41",
 	"threevot": {
-		"version": "23",
+		"version": "41",
 		"screens": {
 			"0-320": "index",
 			"320-900": "index",
@@ -37,6 +37,7 @@
 		"domify": "~1.3.1",
 		"inherits": "~2.0.1",
 		"events": "~1.0.2",
-		"superagent": "~0.20.0"
+		"superagent": "~0.20.0",
+		"fastclick": "~1.0.3"
 	}
 }

@@ -6,16 +6,16 @@
 		Login to <span class="account_name"></span>
 	</div>
 
-	<input id="txt_username" class="form-control" />
+	<input value="user" id="txt_username" class="form-control" />
 
-	<input id="txt_password" type="password" class="form-control" />
+	<input value="pass" id="txt_password" type="password" class="form-control" />
 
 	<div class="row">
 		<a class="btn btn-primary btn_send pull-right">Login</a>
 		<a class="btn btn-default btn_cancel">Cancel</a>
 	</div>
 
-</div>
+	</div>
 
 	<div class="powered" ></div>
 

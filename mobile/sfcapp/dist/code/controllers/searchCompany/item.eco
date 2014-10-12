@@ -1,7 +1,5 @@
-
-	  <div class="grid-list-item grid-list-item__light">
-	    <div  class="icon  company-item item-company " data-id="<%= @id %>">
-	    </div>
-	    <span><%= @Name %></span>
-
-	  </div>
+<div class="grid-list-item grid-list-item__light">
+ 	<div style="background-image: url('<%= @Logo__c %>')"  class="icon  company-item item-company " data-id="<%= @id %>"></div>
+ 	<span><%= @Name %></span>
+  <span class="label_category">New</span>
+</div>

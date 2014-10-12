@@ -1,0 +1,196 @@
+/*
+ * Redistribution and use in source and binary forms, with or without modification, are permitted provided
+ * that the following conditions are met:
+ *
+ * Redistributions of source code must retain the above copyright notice, this list of conditions and the
+ * following disclaimer.
+ *
+ * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and
+ * the following disclaimer in the documentation and/or other materials provided with the distribution.
+ *
+ * Neither the name of salesforce.com, inc. nor the names of its contributors may be used to endorse or
+ * promote products derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED
+ * WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+ * PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+ * TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ * POSSIBILITY OF SUCH DAMAGE.
+ */
+
+//BASED ON THREEVOTAPICONTROLLER
+
+global without sharing class SFC_Controller {
+
+ //handleRest receives an REST Operation['get,post,put,del'] a url and a JSON
+
+	/*
+		Class Entry Point for Visualforce Remoting
+		It requires: 
+			An HTTP VERB that defines what operation to perform ['get,post,put,del']
+			An Url that defines the targeted object or custom operation to be performaned
+			An optional Fields argument for upsert and query operations
+	*/
+    @RemoteAction
+    global static String handleRest(string verb, String url, string fields, string token) {
+    	if(token == null || token == ''){ RemoteTKController.makeError('You must provide a Token', 'INVALID_TOKEN'); }
+    	
+        List<Account> accounts = [select id,sfc_acl__c, name from Account where sfc_token__c = :token  limit 1];
+        Account account;
+        if(accounts.size() ==0){ return RemoteTKController.makeError('Token is not Valid for any account', 'INVALID_TOKEN'); }
+        else{ account = accounts.get(0); }
+        
+        Map<String, Object> unparsedObject = null;
+        try {
+            if(fields.length() > 0){
+            	unparsedObject = (Map<String, Object>)JSON.deserializeUntyped(fields);
+            }
+        } catch (JSONException je) {
+            return RemoteTKController.makeError(je.getMessage(), 'JSON_PARSER_ERROR');
+        }
+        
+        //Get any query string parameters
+        Map<String,String> queryReference  = new PageReference(url).getParameters();
+        Map<String, String> urlReference = getUrlParts(url);
+      
+        string ACLResult= checkACL(account.sfc_acl__c,verb,urlReference, unparsedObject );
+      	if(ACLResult.length() > 0){ return ACLResult; }
+			
+		   string result = '';
+           if( isApiOperation(urlReference.get('operation') ) ){ 
+                result= ThreeVotApiController.doApiOperation(verb, urlReference.get('operation'), fields, queryReference); 
+            }
+            else if( isRest( urlReference.get('type') ) ){
+                result= ThreeVotApiController.doRest(verb, urlReference.get('type'), urlReference.get('id'), fields);
+            }
+            else{
+            	result = RemoteTKController.makeError('Operation not found, request url and/or options are not valid', 'INVALID_OPERATION'); 
+            }
+			
+			audit(account, verb, urlReference, unparsedObject, result);
+			chatter(account, verb, urlReference, unparsedObject, result);
+			return result;
+    }
+    
+    
+    /*
+		This function get's called when we determined it's a REST Operation
+	*/
+    public static string doRest(string verb, string objtype, string id, string fields){
+        string result = RemoteTKController.makeError('Operation Not Found', 'ERR-3VOT-1');
+        if(verb == 'post'){ result = RemoteTKController.create(objtype, fields); }
+        else if(verb == 'get'){ result = RemoteTKController.retrieve(objtype, id, fields ); }
+        else if(verb == 'del'){ result = RemoteTKController.del(objtype, id); }
+        else if(verb == 'put'){ result = RemoteTKController.updat(objtype, id, fields); }
+        return result;
+    }
+    
+    /*
+		This function get's called when we determined it's a Custom Operation
+	*/
+    public static string doApiOperation(string verb, string type, string fields, map<string,string> queryReference){
+        string result = '';
+        //if(verb == 'post'){
+        	//queryReference = (Map<String,String>)JSON.deserializeUntyped(fields);
+        //}
+        
+        if( type == 'query'&& queryReference.get('query') != null ){ 
+        	result = RemoteTKController.query( queryReference.get('query') ); 
+        }
+         else if( type == 'apex' && queryReference.get('arguments') != null && queryReference.get('class') != null ){ 
+        	result = ThreeVotApiOperations.apex(queryReference.get('arguments') ,queryReference.get('class'));
+        }
+        else{
+        	result = RemoteTKController.makeError('Query or Body Arguments do not match API Operations','MALFORMED_QUERY');
+        }
+
+        return result;
+    }
+    
+ 	/*
+		Helper function to split URL in Object, Id and Custom Parts
+	*/
+ 	public static Map<String,String> getUrlParts(string url){
+	    Map<string,string> result = new Map<String,String>();
+	    List<string> queryParts = url.split('\\?');
+	    List<string> urlParts = queryParts[0].split('/');
+	    
+	    if( ThreeVotApiController.isApiOperation(urlParts.get(1)) ){
+	    	result.put('operation', urlParts.get(1));                       
+	    }
+	    else{ 
+	    	result.put('type', urlParts.get(1));                       
+	        if( urlparts.size() > 2  && ThreeVotApiController.isIdValid(urlParts.get(2)) ){
+	           result.put('id', urlParts.get(2) );
+	        }
+	    }
+	
+	    return result;
+	}
+    
+    /*
+		Helper function to figure if URL Part is an ID or another element
+	*/
+    public static boolean isIdValid(string MyTestString){
+        ID MyTestID = null;
+        try {
+            MyTestID = MyTestString; 
+            return true;
+        }
+        catch(Exception ex) { return false; }
+    }
+
+	/*
+		Helper function to figure if URL Part is a Salesforce Object
+	*/
+    public static boolean isRest(string type){
+        boolean result = false;
+        if (Schema.getGlobalDescribe().get(type) != null) { result = true; }
+        return result;
+    }
+
+	/*
+		Helper function to figure if URL Part is a Custom Operation
+	*/
+    public static boolean isApiOperation(string type){
+        boolean result = false;
+        if (type == 'query') { result = true; }
+        else if(type== 'apex'){ result= true; }
+        else if(type== 'analytics'){ result= true; }
+        return result;
+    }
+
+	public static string checkACL(string acl, string verb, Map<string,string> urlParts,Map<String, Object> fieldMap){
+		return '';//;RemoteTKController.makeError('error ds sd sd', 'eroro');
+		//A Complex ACL System goes here, written in JSON globally with granular action configuration
+		//restrictions on fields level based on Dynamo DB Implementation.
+	}
+
+
+	public static void audit(account account, string verb,  Map<String,String> urlReference , Map<String,Object> unparsedObject, String result ){
+		// We will Audit every customer action here, so that it's traceble
+	}
+	
+	public static void chatter(account account, string verb,  Map<String,String> urlReference , Map<String,Object> unparsedObject, String result ){
+			
+			string action;
+			if(verb == 'post'){ action= 'created an ' + urlReference.get('type'); }
+			if(verb == 'put'){ action= 'updated an ' + urlReference.get('type') + ' with id ' + urlReference.get('id') ; }
+			
+			if(action != null){			
+				FeedItem post = new FeedItem();
+				
+				post.ParentId = account.id; //eg. Opportunity id, custom object id..
+				
+				if(verb == 'post'){ post.LinkUrl = '/' + urlReference.get('id') ; }
+				post.Body = account.name + ' ' + action;
+
+				insert post;
+			}
+		
+	}
+
+}

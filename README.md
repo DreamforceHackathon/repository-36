@@ -12,7 +12,10 @@ This repository includes
 
 * Salesforce1 Routing Organization that holds a registered Force.com SITE URL, so that users can login into the App and be routed to the 
 
+
 * Salesforce Package that's installed in the Organization that wants to use the platform. It includes the Login and Security Logic to Authenticate Users using the Account Object. Includes the Controllers to easily communicate from Javascript to Visualforce
+
+* A Control Panel App to Register the services and Configure Accounts.
 
 * A Ready to Build ACL Implementation to Granularly control Access by User Account
 
@@ -26,6 +29,12 @@ This repository includes
 
 OPEN SOURCE
 Clay and Clay Model are Open Source and Available in Github and NPM , Clay Marketplace is documented in Clay Wiki in Github. This tools accelerate dramaticaly the time and effort to build apps
+
+Also used Clay for Salesforce Component and ForceTKComponent
+
+All Open Source Components can be found here:
+https://github.com/3vot
+
 
 Passwords to Organizations and More Information
 

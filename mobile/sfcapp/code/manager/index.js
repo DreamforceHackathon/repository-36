@@ -91,7 +91,7 @@ Manager.prototype.initialAnimation  = function(){
 	this.showController(this.splashController);
 	setTimeout(function(){
 		manager.showController(manager.companiesController);
-	},2.5)
+	},2500)
 
 
 }

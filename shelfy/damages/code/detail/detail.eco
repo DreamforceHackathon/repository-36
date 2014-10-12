@@ -1,0 +1,22 @@
+<div class="product-detail" style="padding-bottom: 15px;">
+	<div class="product-title"><%= @Name %></div>
+
+	<div class="product-image"></div>
+
+	<textarea placeholder="Leave a comment" class="product-comment"></textarea>
+
+	<div class="btns">
+
+		<div id="reportbtn"  data-type="report" class="product-button">Report a Problem</div>
+
+		<div id="askbtn" style="display: none" class="half_button">
+			<span  data-type="damage" data-damage="damages"  class="half">Damages?</span>
+			<span class="divider"></span>
+			<span  data-type="other" data-damage="other" class="half product-button__halfright">Other?</span>
+		</div>
+
+		<div id="thanksbtn"  style="display: none" data-type="thanks" class="product-button">Thank You</div>
+
+	</div>
+
+</div>
